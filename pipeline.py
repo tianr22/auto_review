@@ -206,6 +206,7 @@ def refresh_backend_data(json_dic_path,store_path,same_in_df_right_path):
                     student_status[id]='B'
         if not is_need_continue:
             break
+        
     info.update(student_fact_status=student_fact_status,
                 operation_right=operation_right,
                 operation_wrong=operation_wrong,
