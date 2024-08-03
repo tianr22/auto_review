@@ -8,8 +8,7 @@
         "factid": 2,
         "content": "$f(x)$ 在 $x=1$ 处有极值 $\\frac{1}{2}$",
         "additional_expression": []
-    }
-]
+    },
     {
         "factid": 3,
         "content": "$f'(x) = 2ax + \\frac{b}{x}$",
