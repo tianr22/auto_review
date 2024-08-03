@@ -1,0 +1,200 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "content": "$f(x) = ax^2 + b \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "content": "x=1 处有极值 1/2",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "content": "f'(x)=2ax + \\\\frac{b}{x}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 4,
+            "content": "f'(1)=0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 5,
+            "content": "f(1)=\\\\frac{1}{2}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 6,
+            "content": "求导",
+            "type": "operation",
+            "from": [
+                1
+            ],
+            "to": [
+                3
+            ]
+        },
+        {
+            "id": 7,
+            "content": "由极值条件得到方程",
+            "type": "operation",
+            "from": [
+                2
+            ],
+            "to": [
+                4,
+                5
+            ]
+        },
+        {
+            "id": 8,
+            "content": "2a+b=0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 9,
+            "content": "a+b\\\\ln1=\\\\frac{1}{2}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 10,
+            "content": "联立方程求解a和b",
+            "type": "operation",
+            "from": [
+                4,
+                5
+            ],
+            "to": [
+                8,
+                9
+            ]
+        },
+        {
+            "id": 11,
+            "content": "a=\\\\frac{1}{2}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 12,
+            "content": "b=-1",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 13,
+            "content": "解联立方程",
+            "type": "operation",
+            "from": [
+                8,
+                9
+            ],
+            "to": [
+                11,
+                12
+            ]
+        },
+        {
+            "id": 14,
+            "content": "f'(x)=x-\\\\frac{1}{x}=\\\\frac{x^2-1}{x}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 15,
+            "content": "定义域 $x \\\\neq 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 16,
+            "content": "将a和b的值代入导数式子",
+            "type": "operation",
+            "from": [
+                3,
+                11,
+                12
+            ],
+            "to": [
+                14
+            ]
+        },
+        {
+            "id": 17,
+            "content": "根据导数定义域确定函数定义域",
+            "type": "operation",
+            "from": [
+                14
+            ],
+            "to": [
+                15
+            ]
+        },
+        {
+            "id": 18,
+            "content": "极小值: \\\\frac{1}{2}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 19,
+            "content": "(-\\\\infty, 1) \\\\downarrow",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 20,
+            "content": "(1, +\\\\infty) \\\\uparrow",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 21,
+            "content": "分析导数的正负性",
+            "type": "operation",
+            "from": [
+                14
+            ],
+            "to": [
+                19,
+                20
+            ]
+        },
+        {
+            "id": 22,
+            "content": "根据导数的正负性判断函数的单调区间",
+            "type": "operation",
+            "from": [
+                15,
+                19,
+                20
+            ],
+            "to": [
+                18
+            ]
+        }
+    ]
+}

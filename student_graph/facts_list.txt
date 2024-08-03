@@ -1,0 +1,312 @@
+[
+    {
+        "factid": 1,
+        "content": "$f(x) = ax^2 + b \\ln x$",
+        "additional_expression": []
+    },
+    {
+        "factid": 2,
+        "content": "x=1 处有极值 1/2",
+        "additional_expression": []
+    },
+    {
+        "factid": 3,
+        "content": "$f(x)$ 在 $x=1$ 处有极值 $\\frac{1}{2}$",
+        "additional_expression": []
+    },
+    {
+        "factid": 4,
+        "content": "$f'(x) = 2ax + \\frac{b}{x}$",
+        "additional_expression": ["$f'(x) = 2ax + b\\frac{1}{x}$"]
+    },
+    {
+        "factid": 5,
+        "content": "$f(1) = a + b = 0$",
+        "additional_expression": []
+    },
+    {
+        "factid": 6,
+        "content": "定义域 $x > 0$",
+        "additional_expression": ["函数的定义域是 $(0, +\\infty)$", "定义域 $(0, +\\infty)$", "定义域 $x \\neq 0$", "定义域 $x > 0$"]
+    },
+    {
+        "factid": 7,
+        "content": "$f'(1) = 0$",
+        "additional_expression": ["$f'(1) = 2a + b = 0$", "$2ax + \\frac{b}{1} = 0$"]
+    },
+    {
+        "factid": 8,
+        "content": "$f'(1) = \\frac{1}{2}$",
+        "additional_expression": ["$f'(1) = 2a + b = \\frac{1}{2}$"]
+    },
+    {
+        "factid": 9,
+        "content": "$f(1) = \\frac{1}{2}$",
+        "additional_expression": ["$f(1) = a + b \\ln 1 = \\frac{1}{2}$", "$f(1) = \\frac{1}{2} - \\ln 1 = \\frac{1}{2}$"]
+    },
+    {
+        "factid": 10,
+        "content": "$2a + b = 0$",
+        "additional_expression": []
+    },
+    {
+        "factid": 11,
+        "content": "$a + b \\ln 1 = \\frac{1}{2}$",
+        "additional_expression": ["$a \\cdot 1^2 + b \\ln 1 = \\frac{1}{2}$", "$a + b \\cdot 0 = \\frac{1}{2}$", "$a + b \\ln 1 = \\frac{1}{2}$"]
+    },
+    {
+        "factid": 12,
+        "content": "$2a + b = \\frac{1}{2}$",
+        "additional_expression": []
+    },
+    {
+        "factid": 13,
+        "content": "$2 \\cdot \\frac{1}{2} + b = 0$",
+        "additional_expression": ["$f'(1) = 0$", "$f'(1) = 1 + b = 0$"]
+    },
+    {
+        "factid": 14,
+        "content": "$a = \\frac{1}{2}$",
+        "additional_expression": []
+    },
+    {
+        "factid": 15,
+        "content": "$b = -1$",
+        "additional_expression": []
+    },
+    {
+        "factid": 16,
+        "content": "$b = -\\frac{1}{2}$",
+        "additional_expression": []
+    },
+    {
+        "factid": 17,
+        "content": "$f(x) = \\frac{1}{2}x^2 - \\ln x$",
+        "additional_expression": []
+    },
+    {
+        "factid": 18,
+        "content": "$f(x) = \\frac{1}{2}x^2 - \\frac{1}{2} \\ln x$",
+        "additional_expression": []
+    },
+    {
+        "factid": 19,
+        "content": "$f'(x) = x - \\frac{1}{x}$",
+        "additional_expression": ["$f'(x) = \\frac{x^2 - 1}{x}$"]
+    },
+    {
+        "factid": 20,
+        "content": "$f'(x) = x - \\frac{1}{2x}$",
+        "additional_expression": ["$f'(x) = \\frac{2x^2 - 1}{2x}$"]
+    },
+    {
+        "factid": 21,
+        "content": "$x = 1$ 时 $f'(x) = 0$",
+        "additional_expression": ["$f'(x) = 0 \\Rightarrow x = \\pm 1$"]
+    },
+    {
+        "factid": 22,
+        "content": "$f'(x) = 0$ 时 $x^2 - 1 = 0$",
+        "additional_expression": ["$x - \\frac{1}{x} = 0$", "$f'(x) = 0, x - \\frac{1}{x} = 0$", "令 $f'(x) = 0$ 得 $x^2 - 1 = 0$"]
+    },
+    {
+        "factid": 23,
+        "content": "$x^2 - x = 0$",
+        "additional_expression": []
+    },
+    {
+        "factid": 24,
+        "content": "$x = \\pm \\frac{\\sqrt{2}}{2}$时 $f'(x) = 0$",
+        "additional_expression": []
+    },
+    {
+        "factid": 25,
+        "content": "$x = 1$ 或 $x = -1$ $f'(x) = 0$",
+        "additional_expression": ["$x = \\pm 1$ $f'(x) = 0$"]
+    },
+    {
+        "factid": 26,
+        "content": "$x = 0$ 或 $x = 1$",
+        "additional_expression": []
+    },
+    {
+        "factid": 27,
+        "content": "$x = -1$ 不在定义域内",
+        "additional_expression": []
+    },
+    {
+        "factid": 28,
+        "content": "$x = 1$",
+        "additional_expression": ["根据定义域，只有 $x = 1$"]
+    },
+    {
+        "factid": 29,
+        "content": "x在$(-\\infty, 1)$单调递减",
+        "additional_expression": ["在 $(-\\infty, 1)$ 上为减区间"]
+    },
+    {
+        "factid": 30,
+        "content": "$f(x)$ 在 $(-\\frac{\\sqrt{2}}{2}, \\frac{\\sqrt{2}}{2})$ 单调递减",
+        "additional_expression": []
+    },
+    {
+        "factid": 31,
+        "content": "$f'(x) < 0$ 在 $(0, 1)$",
+        "additional_expression": ["x在(0, 1) $f'(x) < 0$"]
+    },
+    {
+        "factid": 32,
+        "content": "$f(x)$ 在 $(0, 1)$ 上单调递减",
+        "additional_expression": ["$x \\in (0, 1)$ 时，$f(x)$ 在 $(0, 1)$ 上单调递减"]
+    },
+    {
+        "factid": 33,
+        "content": "x在$(-1, 1)$上$f'(x) < 0$",
+        "additional_expression": []
+    },
+    {
+        "factid": 34,
+        "content": "x在$(-1, 1)$上单调递减",
+        "additional_expression": []
+    },
+    {
+        "factid": 35,
+        "content": "x在$(1, +\\infty)$上$f'(x) > 0$",
+        "additional_expression": []
+    },
+    {
+        "factid": 36,
+        "content": "x在$(1, +\\infty)$单调递增",
+        "additional_expression": ["在 $(1, +\\infty)$ 上为增区间", "$x \\in (1, +\\infty)$ 时，$f(x)$ 在 $(1, +\\infty)$ 上单调递增"]
+    },
+    {
+        "factid": 37,
+        "content": "$f(x)$ 在 $(-\\infty, -\\frac{\\sqrt{2}}{2})$ 和 $(\\frac{\\sqrt{2}}{2}, +\\infty)$ 单调递增",
+        "additional_expression": []
+    },
+    {
+        "factid": 38,
+        "content": "$f'(x) > 0$ 在 $(1, +\\infty)$",
+        "additional_expression": ["x在(1, +\\infty) $f'(x) > 0$"]
+    },
+    {
+        "factid": 39,
+        "content": "x在$(-\\infty, -1)$上$f'(x) > 0$",
+        "additional_expression": []
+    },
+    {
+        "factid": 40,
+        "content": "x在$(-\\infty, -1)$上单调递增",
+        "additional_expression": []
+    },
+    {
+        "factid": 41,
+        "content": "$x = 1$ 处有极小值",
+        "additional_expression": ["x=1处有极小值", "$f(x)$ 在 $x=1$ 处有极小值", "$x = 1$ 处有最小值", "$x = 1$ 时 $f(x)$ 有极小值"]
+    },
+    {
+        "factid": 42,
+        "content": "$f(1) = \\frac{1}{2}$",
+        "additional_expression": ["$f(x)$ 极小值为 $\\frac{1}{2}$", "$x = 1$ 处有极小值 $-\\frac{1}{2}$", "最小值为 $\\frac{1}{2}$", "极小值$f(1) = \\frac{1}{2} - \\ln 1 = \\frac{1}{2}$", "$f(1) = a + 0 = \\frac{1}{2}$", "$f(1) = a = \\frac{1}{2}$", "$f(1) = \\frac{1}{2} - \\ln 1 = \\frac{1}{2}$"]
+    },
+    {
+        "factid": 43,
+        "content": "$x = \\frac{\\sqrt{2}}{2}$ 时 $f(x)$ 有极小值 $",
+        "additional_expression": []
+    },
+    {
+        "factid": 44,
+        "content": "$x = -\\frac{\\sqrt{2}}{2}$ 时 $f(x)$ 有极大值 $",
+        "additional_expression": []
+    },
+    {
+        "factid": 45,
+        "content": "$f(x)$ 极大值为 $\\frac{1}{4} + \\frac{1}{2} \\ln \\frac{\\sqrt{2}}{2}$",
+        "additional_expression": []
+    },
+    {
+        "factid": 46,
+        "content": "无极大值",
+        "additional_expression": []
+    },
+    {
+        "factid": 47,
+        "content": "x=-1处有极大值",
+        "additional_expression": ["x=-1处是极大值"]
+    },
+    {
+        "factid": 48,
+        "content": "$f(-1) = \\frac{1}{2}$",
+        "additional_expression": []
+    },
+    {
+        "factid": 49,
+        "content": "$f(0) = -1$",
+        "additional_expression": []
+    },
+    {
+        "factid": 50,
+        "content": "$x = 0$ 处有极大值 $-1$",
+        "additional_expression": ["极大值 $f(0) = -1$"]
+    },
+    {
+        "factid": 51,
+        "content": "$a + b = \\frac{1}{2}$",
+        "additional_expression": []
+    },
+    {
+        "factid": 52,
+        "content": "$f(x) = -x^2 + \\frac{3}{2} \\ln x$",
+        "additional_expression": []
+    },
+    {
+        "factid": 53,
+        "content": "$a = -1$",
+        "additional_expression": []
+    },
+    {
+        "factid": 54,
+        "content": "$b = \\frac{3}{2}$",
+        "additional_expression": []
+    },
+    {
+        "factid": 55,
+        "content": "$f'(x) = -x + \\frac{3}{2x}$",
+        "additional_expression": []
+    },
+    {
+        "factid": 56,
+        "content": "$-2x^2 + 3 = 0$",
+        "additional_expression": []
+    },
+    {
+        "factid": 57,
+        "content": "$x = \\frac{3}{2}$",
+        "additional_expression": []
+    },
+    {
+        "factid": 58,
+        "content": "$f(x)$ 在 $(0, \\frac{3}{2})$ 上递增",
+        "additional_expression": []
+    },
+    {
+        "factid": 59,
+        "content": "$f(x)$ 在 $(\\frac{3}{2}, +\\infty)$ 上递减",
+        "additional_expression": []
+    },
+    {
+        "factid": 60,
+        "content": "$x = \\frac{3}{2}$ 是极大值点",
+        "additional_expression": []
+    },
+    {
+        "factid": 61,
+        "content": "$f(\\frac{3}{2}) = \\frac{1}{2}$",
+        "additional_expression": []
+    },
+    {
+        "factid": 62,
+        "content": "无极小值",
+        "additional_expression": []
+    }
+]

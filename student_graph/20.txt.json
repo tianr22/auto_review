@@ -1,0 +1,263 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "factid": 1,
+            "content": "$f(x) = ax^2 + b \\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "factid": 2,
+            "content": "x=1 处有极值 1/2",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "factid": 4,
+            "content": "$f'(x) = 2ax + \\frac{b}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 4,
+            "content": "求导函数",
+            "type": "operation",
+            "from": [1],
+            "to": [3]
+        },
+        {
+            "id": 5,
+            "factid": 7,
+            "content": "$f'(1) = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 6,
+            "factid": 9,
+            "content": "$f(1) = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 7,
+            "content": "利用极值条件建立方程",
+            "type": "operation",
+            "from": [2, 3],
+            "to": [5, 6]
+        },
+        {
+            "id": 8,
+            "factid": 10,
+            "content": "$2a + b = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 9,
+            "factid": 11,
+            "content": "$a + b \\ln 1 = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 10,
+            "content": "代入数值化简方程",
+            "type": "operation",
+            "from": [5, 6],
+            "to": [8, 9]
+        },
+        {
+            "id": 11,
+            "factid": 53,
+            "content": "$a = -1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 12,
+            "factid": 54,
+            "content": "$b = \\frac{3}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 13,
+            "content": "求得a和b的具体值",
+            "type": "operation",
+            "from": [8, 9],
+            "to": [11, 12]
+        },
+        {
+            "id": 14,
+            "factid": 52,
+            "content": "$f(x) = -x^2 + \\frac{3}{2} \\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 15,
+            "content": "代入a和b的值得到原函数表达式",
+            "type": "operation",
+            "from": [1, 11, 12],
+            "to": [14]
+        },
+        {
+            "id": 16,
+            "factid": 55,
+            "content": "$f'(x) = -x + \\frac{3}{2x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 17,
+            "content": "求导得到导数表达式",
+            "type": "operation",
+            "from": [14],
+            "to": [16]
+        },
+        {
+            "id": 18,
+            "factid": 6,
+            "content": "定义域 $x > 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 19,
+            "content": "根据对数函数确定定义域",
+            "type": "operation",
+            "from": [1],
+            "to": [18]
+        },
+        {
+            "id": 20,
+            "factid": 56,
+            "content": "$-2x^2 + 3 = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 21,
+            "content": "求导数函数零点并化简方程",
+            "type": "operation",
+            "from": [16],
+            "to": [20]
+        },
+        {
+            "id": 22,
+            "factid": 57,
+            "content": "$x = \\frac{3}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 23,
+            "factid": 26,
+            "content": "$x = 0$ 或 $x = 1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 24,
+            "content": "求解方程得到方程的根",
+            "type": "operation",
+            "from": [20],
+            "to": [22, 23]
+        },
+        {
+            "id": 25,
+            "factid": 28,
+            "content": "$x = 1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 26,
+            "content": "根据定义域确定极值点",
+            "type": "operation",
+            "from": [18, 23],
+            "to": [25]
+        },
+        {
+            "id": 27,
+            "factid": 58,
+            "content": "$f(x)$ 在 $(0, \\frac{3}{2})$ 上递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 28,
+            "factid": 59,
+            "content": "$f(x)$ 在 $(\\frac{3}{2}, +\\infty)$ 上递减",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 29,
+            "factid": 60,
+            "content": "$x = \\frac{3}{2}$ 是极大值点",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 30,
+            "content": "根据导数正负判断单调性和极值类型",
+            "type": "operation",
+            "from": [16, 18, 22],
+            "to": [27, 28, 29]
+        },
+        {
+            "id": 31,
+            "factid": 61,
+            "content": "$f(\\frac{3}{2}) = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 32,
+            "factid": 62,
+            "content": "无极小值",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 33,
+            "content": "计算极值点处的函数值",
+            "type": "operation",
+            "from": [14, 22],
+            "to": [31]
+        },
+        {
+            "id": 34,
+            "content": "根据单调区间判断极小值的存在性",
+            "type": "operation",
+            "from": [27, 28],
+            "to": [32]
+        }
+    ]
+}

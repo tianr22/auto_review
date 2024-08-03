@@ -1,0 +1,272 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "content": "$f(x) = ax^2 + b \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "content": "x=1 处有极值 1/2",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "content": "$f'(x) = 2ax + \\\\frac{b}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 4,
+            "content": "求导",
+            "type": "operation",
+            "from": [
+                1
+            ],
+            "to": [
+                3
+            ]
+        },
+        {
+            "id": 5,
+            "content": "f(1) = a + b \\\\ln 1 = \\\\frac{1}{2}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 6,
+            "content": "f'(1) = 2a + b = 0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 7,
+            "content": "根据极值点求函数值",
+            "type": "operation",
+            "from": [
+                1,
+                2
+            ],
+            "to": [
+                5
+            ]
+        },
+        {
+            "id": 8,
+            "content": "根据极值点求导数值",
+            "type": "operation",
+            "from": [
+                2,
+                3
+            ],
+            "to": [
+                6
+            ]
+        },
+        {
+            "id": 9,
+            "content": "联立方程求解 a 和 b",
+            "type": "operation",
+            "from": [
+                5,
+                6
+            ],
+            "to": []
+        },
+        {
+            "id": 10,
+            "content": "$a = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 11,
+            "content": "$b = -1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 12,
+            "content": "解联立方程",
+            "type": "operation",
+            "from": [
+                5,
+                6
+            ],
+            "to": [
+                10,
+                11
+            ]
+        },
+        {
+            "id": 13,
+            "content": "$f(x) = \\\\frac{1}{2} x^2 - \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 14,
+            "content": "代入 a 和 b 的值简化原函数",
+            "type": "operation",
+            "from": [
+                1,
+                10,
+                11
+            ],
+            "to": [
+                13
+            ]
+        },
+        {
+            "id": 15,
+            "content": "$f'(x) = x - \\\\frac{1}{x} = \\\\frac{x^2 - 1}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 16,
+            "content": "代入 a 和 b 的值求导函数",
+            "type": "operation",
+            "from": [
+                3,
+                10,
+                11
+            ],
+            "to": [
+                15
+            ]
+        },
+        {
+            "id": 17,
+            "content": "$f'(x) = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 18,
+            "content": "令导函数等于0求解 x",
+            "type": "operation",
+            "from": [
+                15
+            ],
+            "to": [
+                17
+            ]
+        },
+        {
+            "id": 19,
+            "content": "$x = \\\\pm 1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 20,
+            "content": "解方程 $x^2 - 1 = 0$",
+            "type": "operation",
+            "from": [
+                15,
+                17
+            ],
+            "to": [
+                19
+            ]
+        },
+        {
+            "id": 21,
+            "content": "单调区间 $(0, 1)$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 22,
+            "content": "单调区间 $(1, +\\\\infty)$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 23,
+            "content": "根据导函数的零点划分单调区间",
+            "type": "operation",
+            "from": [
+                19
+            ],
+            "to": [
+                21,
+                22
+            ]
+        },
+        {
+            "id": 24,
+            "content": "$f(x)$ 在 $(0, 1)$ 上单调递减",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 25,
+            "content": "$f(x)$ 在 $(1, +\\\\infty)$ 上单调递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 26,
+            "content": "根据导函数的正负判断单调性",
+            "type": "operation",
+            "from": [
+                15,
+                21
+            ],
+            "to": [
+                24
+            ]
+        },
+        {
+            "id": 27,
+            "content": "根据导函数的正负判断单调性",
+            "type": "operation",
+            "from": [
+                15,
+                22
+            ],
+            "to": [
+                25
+            ]
+        },
+        {
+            "id": 28,
+            "content": "当 $x = 1$ 时，$f(x)$ 有极小值 $f(1) = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 29,
+            "content": "根据单调区间和极值点求极值",
+            "type": "operation",
+            "from": [
+                2,
+                21,
+                22
+            ],
+            "to": [
+                28
+            ]
+        }
+    ]
+}

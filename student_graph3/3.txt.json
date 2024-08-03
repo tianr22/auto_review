@@ -1,0 +1,203 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "factid": 1,
+            "content": "$f(x) = ax^2 + b \\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "factid": 2,
+            "content": "$f(x)$ 在 $x=1$ 处有极值 $\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "factid": 3,
+            "content": "$f'(x) = 2ax + \\frac{b}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 4,
+            "content": "求函数导数",
+            "type": "operation",
+            "from": [1],
+            "to": [3]
+        },
+        {
+            "id": 5,
+            "factid": 4,
+            "content": "$f'(1) = 2a + b = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 6,
+            "factid": 5,
+            "content": "$f(1) = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 7,
+            "content": "利用极值条件建立方程",
+            "type": "operation",
+            "from": [2, 3],
+            "to": [5, 6]
+        },
+        {
+            "id": 8,
+            "factid": 6,
+            "content": "$2a + b = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 9,
+            "factid": 5,
+            "content": "$f(1) = a + b \\ln 1 = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 10,
+            "content": "代入数值化简方程",
+            "type": "operation",
+            "from": [5, 6],
+            "to": [8, 9]
+        },
+        {
+            "id": 11,
+            "factid": 7,
+            "content": "$a = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 12,
+            "factid": 8,
+            "content": "$b = -1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 13,
+            "content": "求得a和b的具体值",
+            "type": "operation",
+            "from": [8, 9],
+            "to": [11, 12]
+        },
+        {
+            "id": 14,
+            "factid": 9,
+            "content": "$f(x) = \\frac{1}{2}x^2 - \\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 15,
+            "content": "将a和b的值代入原函数",
+            "type": "operation",
+            "from": [11, 12],
+            "to": [14]
+        },
+        {
+            "id": 16,
+            "factid": 10,
+            "content": "$f'(x) = x - \\frac{1}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 17,
+            "content": "求新的导数",
+            "type": "operation",
+            "from": [14],
+            "to": [16]
+        },
+        {
+            "id": 18,
+            "factid": 18,
+            "content": "$f'(x) = 0, x = \\pm 1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 19,
+            "content": "求导数为零的点",
+            "type": "operation",
+            "from": [16],
+            "to": [18]
+        },
+        {
+            "id": 20,
+            "factid": 48,
+            "content": "$f(x)$ 在 $(-\\infty, -1)$ 上单调递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 21,
+            "factid": 49,
+            "content": "$f(x)$ 在 $(-1, 1)$ 上单调递减",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 22,
+            "factid": 15,
+            "content": "$f(x)$ 在 $(1, +\\infty)$ 上单调递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 23,
+            "content": "确定单调区间",
+            "type": "operation",
+            "from": [18],
+            "to": [20, 21, 22]
+        },
+        {
+            "id": 24,
+            "factid": 19,
+            "content": "$x=1$ 处有极小值 $f(1) = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 25,
+            "factid": 21,
+            "content": "$x=-1$ 是极大值",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 26,
+            "content": "确定极值点",
+            "type": "operation",
+            "from": [18],
+            "to": [24, 25]
+        }
+    ]
+}

@@ -1,0 +1,236 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "content": "$f(x) = ax^2 + b \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "content": "$f(1) = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "content": "$f'(x) = 2ax + \\\\frac{b}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 4,
+            "content": "$f'(1) = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 5,
+            "content": "求导",
+            "type": "operation",
+            "from": [
+                1
+            ],
+            "to": [
+                3
+            ]
+        },
+        {
+            "id": 6,
+            "content": "$a = -\\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 7,
+            "content": "$b = -1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 8,
+            "content": "代入 $f(1) = \\\\frac{1}{2}$ 求a",
+            "type": "operation",
+            "from": [
+                1,
+                2
+            ],
+            "to": [
+                6
+            ]
+        },
+        {
+            "id": 9,
+            "content": "代入 $f'(1) = 0$ 求b",
+            "type": "operation",
+            "from": [
+                3,
+                4
+            ],
+            "to": [
+                7
+            ]
+        },
+        {
+            "id": 10,
+            "content": "$f(x) = \\\\frac{1}{2} x^2 - \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 11,
+            "content": "代入a和b的值得到f(x)",
+            "type": "operation",
+            "from": [
+                1,
+                6,
+                7
+            ],
+            "to": [
+                10
+            ]
+        },
+        {
+            "id": 12,
+            "content": "$f'(x) = x - \\\\frac{1}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 13,
+            "content": "求f(x)的导数",
+            "type": "operation",
+            "from": [
+                10
+            ],
+            "to": [
+                12
+            ]
+        },
+        {
+            "id": 14,
+            "content": "定义域 $(0, +\\\\infty)$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 15,
+            "content": "根据对数函数定义求定义域",
+            "type": "operation",
+            "from": [
+                10
+            ],
+            "to": [
+                14
+            ]
+        },
+        {
+            "id": 16,
+            "content": "$f'(x) = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 17,
+            "content": "$x^2 - x = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 18,
+            "content": "$x = 0$ 或 $x = 1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 19,
+            "content": "解方程 $f'(x) = 0$",
+            "type": "operation",
+            "from": [
+                12,
+                16
+            ],
+            "to": [
+                17
+            ]
+        },
+        {
+            "id": 20,
+            "content": "解方程 $x^2 - x = 0$",
+            "type": "operation",
+            "from": [
+                17
+            ],
+            "to": [
+                18
+            ]
+        },
+        {
+            "id": 21,
+            "content": "$f(x)$ 在 $(0, 1)$ 上单调递减",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 22,
+            "content": "$f(x)$ 在 $(1, +\\\\infty)$ 上单调递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 23,
+            "content": "根据导数正负判断单调区间",
+            "type": "operation",
+            "from": [
+                12,
+                14,
+                18
+            ],
+            "to": [
+                21,
+                22
+            ]
+        },
+        {
+            "id": 24,
+            "content": "极小值 $f(1) = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 25,
+            "content": "极大值 $f(0) = -1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 26,
+            "content": "求极值",
+            "type": "operation",
+            "from": [
+                10,
+                18
+            ],
+            "to": [
+                24,
+                25
+            ]
+        }
+    ]
+}

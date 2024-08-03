@@ -1,0 +1,188 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "factid": 1,
+            "content": "$f(x) = ax^2 + b \\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "factid": 11,
+            "content": "定义域 $(0, +\\infty)$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "factid": 2,
+            "content": "$f(x)$ 在 $x=1$ 处有极值 $\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 4,
+            "factid": 3,
+            "content": "$f'(x) = 2ax + \\frac{b}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 5,
+            "content": "求函数导数",
+            "type": "operation",
+            "from": [1],
+            "to": [4]
+        },
+        {
+            "id": 6,
+            "factid": 5,
+            "content": "$f(1) = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 7,
+            "factid": 4,
+            "content": "$f'(1) = 2a + b = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 8,
+            "content": "利用极值条件建立方程",
+            "type": "operation",
+            "from": [3, 4],
+            "to": [6, 7]
+        },
+        {
+            "id": 9,
+            "factid": 7,
+            "content": "$a = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 10,
+            "factid": 53,
+            "content": "$b = -\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 11,
+            "content": "解方程求得a和b的值",
+            "type": "operation",
+            "from": [6, 7],
+            "to": [9, 10]
+        },
+        {
+            "id": 12,
+            "factid": 55,
+            "content": "$f(x) = \\frac{1}{2}x^2 - \\frac{1}{2} \\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 13,
+            "content": "代入a和b的值得到f(x)的表达式",
+            "type": "operation",
+            "from": [9, 10],
+            "to": [12]
+        },
+        {
+            "id": 14,
+            "factid": 59,
+            "content": "$f'(x) = \\frac{2x^2 - 1}{2x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 15,
+            "content": "求导数f'(x)",
+            "type": "operation",
+            "from": [12],
+            "to": [14]
+        },
+        {
+            "id": 16,
+            "factid": 23,
+            "content": "$f'(x) = 0, x = \\pm \\frac{\\sqrt{2}}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 17,
+            "content": "求导数为零的点",
+            "type": "operation",
+            "from": [14],
+            "to": [16]
+        },
+        {
+            "id": 18,
+            "factid": 26,
+            "content": "$f(x)$ 在 $(-\\infty, -\\frac{\\sqrt{2}}{2})$ 上单调递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 19,
+            "factid": 27,
+            "content": "$f(x)$ 在 $(-\\frac{\\sqrt{2}}{2}, \\frac{\\sqrt{2}}{2})$ 上单调递减",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 20,
+            "factid": 28,
+            "content": "$f(x)$ 在 $(\\frac{\\sqrt{2}}{2}, +\\infty)$ 上单调递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 21,
+            "content": "确定单调区间",
+            "type": "operation",
+            "from": [16],
+            "to": [18, 19, 20]
+        },
+        {
+            "id": 22,
+            "factid": 32,
+            "content": "$x = -\\frac{\\sqrt{2}}{2}$ 时 $f(x)$ 有极大值 $\\frac{1}{4} + \\frac{1}{2} \\ln \\frac{\\sqrt{2}}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 23,
+            "factid": 33,
+            "content": "$x = \\frac{\\sqrt{2}}{2}$ 时 $f(x)$ 有极小值 $\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 24,
+            "content": "求极值",
+            "type": "operation",
+            "from": [16],
+            "to": [22, 23]
+        }
+    ]
+}

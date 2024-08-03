@@ -1,0 +1,376 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "content": "$f(x) = ax^2 + b \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "content": "x=1",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "content": "f(1)=1/2",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 4,
+            "content": "代入x=1求函数值",
+            "type": "operation",
+            "from": [
+                1,
+                2
+            ],
+            "to": [
+                3
+            ]
+        },
+        {
+            "id": 5,
+            "content": "f'(x) = 2ax + \\\\frac{b}{x}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 6,
+            "content": "f'(1) = 0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 7,
+            "content": "求导数",
+            "type": "operation",
+            "from": [
+                1
+            ],
+            "to": [
+                5
+            ]
+        },
+        {
+            "id": 8,
+            "content": "代入x=1求导数值",
+            "type": "operation",
+            "from": [
+                5,
+                2
+            ],
+            "to": [
+                6
+            ]
+        },
+        {
+            "id": 9,
+            "content": "2a + b = 0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 10,
+            "content": "由导数值为0得到方程",
+            "type": "operation",
+            "from": [
+                6
+            ],
+            "to": [
+                9
+            ]
+        },
+        {
+            "id": 11,
+            "content": "a + b \\\\ln 1 = 1/2",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 12,
+            "content": "由函数值得到方程",
+            "type": "operation",
+            "from": [
+                3
+            ],
+            "to": [
+                11
+            ]
+        },
+        {
+            "id": 13,
+            "content": "a = 1/2",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 14,
+            "content": "b = -1",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 15,
+            "content": "解方程组求a, b的值",
+            "type": "operation",
+            "from": [
+                9,
+                11
+            ],
+            "to": [
+                13,
+                14
+            ]
+        },
+        {
+            "id": 16,
+            "content": "x > 0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 17,
+            "content": "确定定义域",
+            "type": "operation",
+            "from": [
+                1
+            ],
+            "to": [
+                16
+            ]
+        },
+        {
+            "id": 18,
+            "content": "$f(x) = \\\\frac{1}{2}x^2 - \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 19,
+            "content": "代入a, b的值得到新的函数表达式",
+            "type": "operation",
+            "from": [
+                1,
+                13,
+                14
+            ],
+            "to": [
+                18
+            ]
+        },
+        {
+            "id": 20,
+            "content": "$f'(x) = x - \\\\frac{1}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 21,
+            "content": "求导数表达式",
+            "type": "operation",
+            "from": [
+                18
+            ],
+            "to": [
+                20
+            ]
+        },
+        {
+            "id": 22,
+            "content": "$f'(x) = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 23,
+            "content": "导数为0求解x的值",
+            "type": "operation",
+            "from": [
+                20
+            ],
+            "to": [
+                22
+            ]
+        },
+        {
+            "id": 24,
+            "content": "$x^2 - 1 = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 25,
+            "content": "化简导数为0的方程",
+            "type": "operation",
+            "from": [
+                22
+            ],
+            "to": [
+                24
+            ]
+        },
+        {
+            "id": 26,
+            "content": "$x = \\\\pm 1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 27,
+            "content": "解方程得到x的值",
+            "type": "operation",
+            "from": [
+                24
+            ],
+            "to": [
+                26
+            ]
+        },
+        {
+            "id": 28,
+            "content": "画出增长图",
+            "type": "operation",
+            "from": [
+                20,
+                26
+            ],
+            "to": []
+        },
+        {
+            "id": 29,
+            "content": "(0, 1)",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 30,
+            "content": "(1, +\\infty)",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 31,
+            "content": "$f'(x)$ 负值",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 32,
+            "content": "$f'(x)$ 正值",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 33,
+            "content": "根据导数正负划分单调区间",
+            "type": "operation",
+            "from": [
+                20,
+                29,
+                30
+            ],
+            "to": [
+                31,
+                32
+            ]
+        },
+        {
+            "id": 34,
+            "content": "$f(x)$ 单调递减",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 35,
+            "content": "$f(x)$ 单调递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 36,
+            "content": "根据导数正负判断函数单调性",
+            "type": "operation",
+            "from": [
+                31,
+                29
+            ],
+            "to": [
+                34
+            ]
+        },
+        {
+            "id": 37,
+            "content": "根据导数正负判断函数单调性",
+            "type": "operation",
+            "from": [
+                32,
+                30
+            ],
+            "to": [
+                35
+            ]
+        },
+        {
+            "id": 38,
+            "content": "极小值 $f(1) = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 39,
+            "content": "代入x=1求极值",
+            "type": "operation",
+            "from": [
+                18,
+                2
+            ],
+            "to": [
+                38
+            ]
+        },
+        {
+            "id": 40,
+            "content": "f(x)在(0, 1)上单调递减，在(1, +\\infty)上单调递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 41,
+            "content": "综合单调区间和极值",
+            "type": "operation",
+            "from": [
+                34,
+                35,
+                38
+            ],
+            "to": [
+                40
+            ]
+        }
+    ]
+}

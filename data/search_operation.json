@@ -1,0 +1,3208 @@
+{
+    "0": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                4
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                4
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                4
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                4
+            ]
+        }
+    ],
+    "1": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                4,
+                7
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                4,
+                7
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                4,
+                7
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                4,
+                7
+            ]
+        }
+    ],
+    "2": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                4,
+                7,
+                9
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                4,
+                7,
+                9
+            ]
+        }
+    ],
+    "3": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12
+            ]
+        }
+    ],
+    "4": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12,
+                14
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12,
+                14
+            ]
+        }
+    ],
+    "5": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12,
+                14,
+                16
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12,
+                14,
+                16
+            ]
+        }
+    ],
+    "6": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12,
+                14,
+                16,
+                20
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12,
+                14,
+                16,
+                20
+            ]
+        }
+    ],
+    "7": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22
+            ]
+        }
+    ],
+    "8": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24
+            ]
+        }
+    ],
+    "9": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28
+            ]
+        }
+    ],
+    "10": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                31
+            ]
+        }
+    ],
+    "11": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                32
+            ]
+        }
+    ],
+    "12": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                4,
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                31
+            ]
+        }
+    ],
+    "13": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                7
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                7
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                7
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                7
+            ]
+        }
+    ],
+    "14": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                7,
+                9
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                7,
+                9
+            ]
+        }
+    ],
+    "15": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                7,
+                9,
+                12
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                7,
+                9,
+                12
+            ]
+        }
+    ],
+    "16": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14
+            ]
+        }
+    ],
+    "17": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14,
+                16
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14,
+                16
+            ]
+        }
+    ],
+    "18": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14,
+                16,
+                20
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14,
+                16,
+                20
+            ]
+        }
+    ],
+    "19": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22
+            ]
+        }
+    ],
+    "20": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24
+            ]
+        }
+    ],
+    "21": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28
+            ]
+        }
+    ],
+    "22": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                31
+            ]
+        }
+    ],
+    "23": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                31,
+                32
+            ]
+        }
+    ],
+    "24": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                32
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                30
+            ]
+        }
+    ],
+    "25": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                7,
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                31
+            ]
+        }
+    ],
+    "26": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                9
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                9
+            ]
+        }
+    ],
+    "27": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                9,
+                12
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                9,
+                12
+            ]
+        }
+    ],
+    "28": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                9,
+                12,
+                14
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                9,
+                12,
+                14
+            ]
+        }
+    ],
+    "29": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                9,
+                12,
+                14,
+                16
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                9,
+                12,
+                14,
+                16
+            ]
+        }
+    ],
+    "30": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                9,
+                12,
+                14,
+                16,
+                20
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                9,
+                12,
+                14,
+                16,
+                20
+            ]
+        }
+    ],
+    "31": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                9,
+                12,
+                14,
+                16,
+                20,
+                22
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                9,
+                12,
+                14,
+                16,
+                20,
+                22
+            ]
+        }
+    ],
+    "32": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24
+            ]
+        }
+    ],
+    "33": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28
+            ]
+        }
+    ],
+    "34": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                31
+            ]
+        }
+    ],
+    "35": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                31,
+                32
+            ]
+        }
+    ],
+    "36": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                32
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                30
+            ]
+        }
+    ],
+    "37": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                9,
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                31
+            ]
+        }
+    ],
+    "38": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                12
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                12
+            ]
+        }
+    ],
+    "39": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                12,
+                14
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                12,
+                14
+            ]
+        }
+    ],
+    "40": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                12,
+                14,
+                16
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                12,
+                14,
+                16
+            ]
+        }
+    ],
+    "41": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                12,
+                14,
+                16,
+                20
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                12,
+                14,
+                16,
+                20
+            ]
+        }
+    ],
+    "42": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                12,
+                14,
+                16,
+                20,
+                22
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                12,
+                14,
+                16,
+                20,
+                22
+            ]
+        }
+    ],
+    "43": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                12,
+                14,
+                16,
+                20,
+                22,
+                24
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                12,
+                14,
+                16,
+                20,
+                22,
+                24
+            ]
+        }
+    ],
+    "44": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28
+            ]
+        }
+    ],
+    "45": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                31
+            ]
+        }
+    ],
+    "46": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                31,
+                32
+            ]
+        }
+    ],
+    "47": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                32
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                30
+            ]
+        }
+    ],
+    "48": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                12,
+                14,
+                16,
+                20,
+                22,
+                24,
+                31
+            ]
+        }
+    ],
+    "49": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                14
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                15
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                15
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                14
+            ]
+        }
+    ],
+    "50": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                14,
+                16
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                15,
+                17
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                15,
+                17
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                14,
+                16
+            ]
+        }
+    ],
+    "51": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                14,
+                16,
+                20
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                15,
+                17,
+                21
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                15,
+                17,
+                21
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                14,
+                16,
+                20
+            ]
+        }
+    ],
+    "52": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                14,
+                16,
+                20,
+                22
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                15,
+                17,
+                21,
+                23
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                15,
+                17,
+                21,
+                23
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                14,
+                16,
+                20,
+                22
+            ]
+        }
+    ],
+    "53": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                14,
+                16,
+                20,
+                22,
+                24
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                15,
+                17,
+                21,
+                23,
+                25
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                14,
+                16,
+                20,
+                22,
+                24
+            ]
+        }
+    ],
+    "54": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                14,
+                16,
+                20,
+                22,
+                24,
+                28
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                15,
+                17,
+                21,
+                23,
+                25,
+                29
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                14,
+                16,
+                20,
+                22,
+                24,
+                28
+            ]
+        }
+    ],
+    "55": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                31
+            ]
+        }
+    ],
+    "56": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                31,
+                32
+            ]
+        }
+    ],
+    "57": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                32
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                15,
+                17,
+                21,
+                23,
+                25,
+                29,
+                32
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                14,
+                16,
+                20,
+                22,
+                24,
+                28,
+                30
+            ]
+        }
+    ],
+    "58": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                14,
+                16,
+                20,
+                22,
+                24,
+                31
+            ]
+        }
+    ],
+    "59": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                16
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                17
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                17
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                16
+            ]
+        }
+    ],
+    "60": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                16,
+                20
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                17,
+                21
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                17,
+                21
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                16,
+                20
+            ]
+        }
+    ],
+    "61": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                16,
+                20,
+                22
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                17,
+                21,
+                23
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                17,
+                21,
+                23
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                16,
+                20,
+                22
+            ]
+        }
+    ],
+    "62": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                16,
+                20,
+                22,
+                24
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                17,
+                21,
+                23,
+                25
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                16,
+                20,
+                22,
+                24
+            ]
+        }
+    ],
+    "63": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                16,
+                20,
+                22,
+                24,
+                28
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                17,
+                21,
+                23,
+                25,
+                29
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                16,
+                20,
+                22,
+                24,
+                28
+            ]
+        }
+    ],
+    "64": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                16,
+                20,
+                22,
+                24,
+                28,
+                31
+            ]
+        }
+    ],
+    "65": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                16,
+                20,
+                22,
+                24,
+                28,
+                31,
+                32
+            ]
+        }
+    ],
+    "66": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                16,
+                20,
+                22,
+                24,
+                28,
+                32
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                17,
+                21,
+                23,
+                25,
+                29,
+                32
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                16,
+                20,
+                22,
+                24,
+                28,
+                30
+            ]
+        }
+    ],
+    "67": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                16,
+                20,
+                22,
+                24,
+                31
+            ]
+        }
+    ],
+    "68": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                18
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                19
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                19
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                18
+            ]
+        }
+    ],
+    "69": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                18,
+                24
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                19,
+                25
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                18,
+                24
+            ]
+        }
+    ],
+    "70": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                18,
+                24,
+                28
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                19,
+                25,
+                29
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                18,
+                24,
+                28
+            ]
+        }
+    ],
+    "71": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                18,
+                24,
+                28,
+                31
+            ]
+        }
+    ],
+    "72": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                18,
+                24,
+                28,
+                31,
+                32
+            ]
+        }
+    ],
+    "73": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                18,
+                24,
+                28,
+                32
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                19,
+                25,
+                29,
+                32
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                18,
+                24,
+                28,
+                30
+            ]
+        }
+    ],
+    "74": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                18,
+                24,
+                31
+            ]
+        }
+    ],
+    "75": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                20
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                21
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                21
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                20
+            ]
+        }
+    ],
+    "76": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                20,
+                22
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                21,
+                23
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                21,
+                23
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                20,
+                22
+            ]
+        }
+    ],
+    "77": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                20,
+                22,
+                24
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                21,
+                23,
+                25
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                20,
+                22,
+                24
+            ]
+        }
+    ],
+    "78": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                20,
+                22,
+                24,
+                28
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                21,
+                23,
+                25,
+                29
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                20,
+                22,
+                24,
+                28
+            ]
+        }
+    ],
+    "79": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                20,
+                22,
+                24,
+                28,
+                31
+            ]
+        }
+    ],
+    "80": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                20,
+                22,
+                24,
+                28,
+                31,
+                32
+            ]
+        }
+    ],
+    "81": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                20,
+                22,
+                24,
+                28,
+                32
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                21,
+                23,
+                25,
+                29,
+                32
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                20,
+                22,
+                24,
+                28,
+                30
+            ]
+        }
+    ],
+    "82": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                20,
+                22,
+                24,
+                31
+            ]
+        }
+    ],
+    "83": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                22
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                23
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                23
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                22
+            ]
+        }
+    ],
+    "84": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                22,
+                24
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                23,
+                25
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                22,
+                24
+            ]
+        }
+    ],
+    "85": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                22,
+                24,
+                28
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                23,
+                25,
+                29
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                22,
+                24,
+                28
+            ]
+        }
+    ],
+    "86": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                22,
+                24,
+                28,
+                31
+            ]
+        }
+    ],
+    "87": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                22,
+                24,
+                28,
+                31,
+                32
+            ]
+        }
+    ],
+    "88": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                22,
+                24,
+                28,
+                32
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                23,
+                25,
+                29,
+                32
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                22,
+                24,
+                28,
+                30
+            ]
+        }
+    ],
+    "89": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                22,
+                24,
+                31
+            ]
+        }
+    ],
+    "90": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                24
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                25
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                24
+            ]
+        }
+    ],
+    "91": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                24,
+                28
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                25,
+                29
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                24,
+                28
+            ]
+        }
+    ],
+    "92": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                24,
+                28,
+                31
+            ]
+        }
+    ],
+    "93": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                24,
+                28,
+                31,
+                32
+            ]
+        }
+    ],
+    "94": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                24,
+                28,
+                32
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                25,
+                29,
+                32
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                24,
+                28,
+                30
+            ]
+        }
+    ],
+    "95": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                24,
+                31
+            ]
+        }
+    ],
+    "96": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                28
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                29
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                28
+            ]
+        }
+    ],
+    "97": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                28,
+                32
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                29,
+                32
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                28,
+                30
+            ]
+        }
+    ],
+    "98": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                31
+            ]
+        }
+    ],
+    "99": [
+        {
+            "student_id": 0,
+            "operation_id": [
+                32
+            ]
+        },
+        {
+            "student_id": 1,
+            "operation_id": [
+                32
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                32
+            ]
+        },
+        {
+            "student_id": 3,
+            "operation_id": [
+                30
+            ]
+        }
+    ],
+    "100": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                4,
+                7,
+                10
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                4,
+                7,
+                10
+            ]
+        }
+    ],
+    "101": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                4,
+                7,
+                10,
+                13
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                4,
+                7,
+                10,
+                13
+            ]
+        }
+    ],
+    "102": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                4,
+                7,
+                10,
+                13,
+                15
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                4,
+                7,
+                10,
+                13,
+                15
+            ]
+        }
+    ],
+    "103": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                4,
+                7,
+                10,
+                13,
+                15,
+                17
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                4,
+                7,
+                10,
+                13,
+                15,
+                17
+            ]
+        }
+    ],
+    "104": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                4,
+                7,
+                10,
+                13,
+                15,
+                17,
+                21
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                4,
+                7,
+                10,
+                13,
+                15,
+                17,
+                21
+            ]
+        }
+    ],
+    "105": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                4,
+                7,
+                10,
+                13,
+                15,
+                17,
+                21,
+                23
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                4,
+                7,
+                10,
+                13,
+                15,
+                17,
+                21,
+                23
+            ]
+        }
+    ],
+    "106": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                4,
+                7,
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25
+            ]
+        }
+    ],
+    "107": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                4,
+                7,
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25,
+                29
+            ]
+        }
+    ],
+    "108": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                7,
+                10
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                7,
+                10
+            ]
+        }
+    ],
+    "109": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                7,
+                10,
+                13
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                7,
+                10,
+                13
+            ]
+        }
+    ],
+    "110": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                7,
+                10,
+                13,
+                15
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                7,
+                10,
+                13,
+                15
+            ]
+        }
+    ],
+    "111": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                7,
+                10,
+                13,
+                15,
+                17
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                7,
+                10,
+                13,
+                15,
+                17
+            ]
+        }
+    ],
+    "112": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                7,
+                10,
+                13,
+                15,
+                17,
+                21
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                7,
+                10,
+                13,
+                15,
+                17,
+                21
+            ]
+        }
+    ],
+    "113": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                7,
+                10,
+                13,
+                15,
+                17,
+                21,
+                23
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                7,
+                10,
+                13,
+                15,
+                17,
+                21,
+                23
+            ]
+        }
+    ],
+    "114": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                7,
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25
+            ]
+        }
+    ],
+    "115": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                7,
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25,
+                29
+            ]
+        }
+    ],
+    "116": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                7,
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25,
+                29,
+                32
+            ]
+        }
+    ],
+    "117": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                10
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                10
+            ]
+        }
+    ],
+    "118": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                10,
+                13
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                10,
+                13
+            ]
+        }
+    ],
+    "119": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                10,
+                13,
+                15
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                10,
+                13,
+                15
+            ]
+        }
+    ],
+    "120": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                10,
+                13,
+                15,
+                17
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                10,
+                13,
+                15,
+                17
+            ]
+        }
+    ],
+    "121": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                10,
+                13,
+                15,
+                17,
+                21
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                10,
+                13,
+                15,
+                17,
+                21
+            ]
+        }
+    ],
+    "122": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                10,
+                13,
+                15,
+                17,
+                21,
+                23
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                10,
+                13,
+                15,
+                17,
+                21,
+                23
+            ]
+        }
+    ],
+    "123": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25
+            ]
+        }
+    ],
+    "124": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25,
+                29
+            ]
+        }
+    ],
+    "125": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25,
+                29,
+                32
+            ]
+        }
+    ],
+    "126": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                13
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                13
+            ]
+        }
+    ],
+    "127": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                13,
+                15
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                13,
+                15
+            ]
+        }
+    ],
+    "128": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                13,
+                15,
+                17
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                13,
+                15,
+                17
+            ]
+        }
+    ],
+    "129": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                13,
+                15,
+                17,
+                21
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                13,
+                15,
+                17,
+                21
+            ]
+        }
+    ],
+    "130": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                13,
+                15,
+                17,
+                21,
+                23
+            ]
+        },
+        {
+            "student_id": 2,
+            "operation_id": [
+                13,
+                15,
+                17,
+                21,
+                23
+            ]
+        }
+    ],
+    "131": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                13,
+                15,
+                17,
+                21,
+                23,
+                25
+            ]
+        }
+    ],
+    "132": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                13,
+                15,
+                17,
+                21,
+                23,
+                25,
+                29
+            ]
+        }
+    ],
+    "133": [
+        {
+            "student_id": 1,
+            "operation_id": [
+                13,
+                15,
+                17,
+                21,
+                23,
+                25,
+                29,
+                32
+            ]
+        }
+    ],
+    "134": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                4,
+                7,
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25
+            ]
+        }
+    ],
+    "135": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                4,
+                7,
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25,
+                29
+            ]
+        }
+    ],
+    "136": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                7,
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25
+            ]
+        }
+    ],
+    "137": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                7,
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25,
+                29
+            ]
+        }
+    ],
+    "138": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                7,
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25,
+                29,
+                32
+            ]
+        }
+    ],
+    "139": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25
+            ]
+        }
+    ],
+    "140": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25,
+                29
+            ]
+        }
+    ],
+    "141": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                10,
+                13,
+                15,
+                17,
+                21,
+                23,
+                25,
+                29,
+                32
+            ]
+        }
+    ],
+    "142": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                13,
+                15,
+                17,
+                21,
+                23,
+                25
+            ]
+        }
+    ],
+    "143": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                13,
+                15,
+                17,
+                21,
+                23,
+                25,
+                29
+            ]
+        }
+    ],
+    "144": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                13,
+                15,
+                17,
+                21,
+                23,
+                25,
+                29,
+                32
+            ]
+        }
+    ],
+    "145": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                15,
+                17,
+                21,
+                23,
+                25
+            ]
+        }
+    ],
+    "146": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                15,
+                17,
+                21,
+                23,
+                25,
+                29
+            ]
+        }
+    ],
+    "147": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                15,
+                17,
+                21,
+                23,
+                25,
+                29,
+                32
+            ]
+        }
+    ],
+    "148": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                17,
+                21,
+                23,
+                25
+            ]
+        }
+    ],
+    "149": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                17,
+                21,
+                23,
+                25,
+                29
+            ]
+        }
+    ],
+    "150": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                17,
+                21,
+                23,
+                25,
+                29,
+                32
+            ]
+        }
+    ],
+    "151": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                19,
+                25
+            ]
+        }
+    ],
+    "152": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                19,
+                25,
+                29
+            ]
+        }
+    ],
+    "153": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                19,
+                25,
+                29,
+                32
+            ]
+        }
+    ],
+    "154": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                21,
+                23,
+                25
+            ]
+        }
+    ],
+    "155": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                21,
+                23,
+                25,
+                29
+            ]
+        }
+    ],
+    "156": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                21,
+                23,
+                25,
+                29,
+                32
+            ]
+        }
+    ],
+    "157": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                23,
+                25
+            ]
+        }
+    ],
+    "158": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                23,
+                25,
+                29
+            ]
+        }
+    ],
+    "159": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                23,
+                25,
+                29,
+                32
+            ]
+        }
+    ],
+    "160": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                25
+            ]
+        }
+    ],
+    "161": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                25,
+                29
+            ]
+        }
+    ],
+    "162": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                25,
+                29,
+                32
+            ]
+        }
+    ],
+    "163": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                29
+            ]
+        }
+    ],
+    "164": [
+        {
+            "student_id": 2,
+            "operation_id": [
+                29,
+                32
+            ]
+        }
+    ]
+}

@@ -1,0 +1,278 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "content": "$f(x) = ax^2 + b \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "content": "x>0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "content": "定义域确定",
+            "type": "operation",
+            "from": [
+                1
+            ],
+            "to": [
+                2
+            ]
+        },
+        {
+            "id": 4,
+            "content": "$f'(x) = 2ax + \\\\frac{b}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 5,
+            "content": "求导",
+            "type": "operation",
+            "from": [
+                1
+            ],
+            "to": [
+                4
+            ]
+        },
+        {
+            "id": 6,
+            "content": "x=1",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 7,
+            "content": "$f(1) = a + b = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 8,
+            "content": "将x=1代入原函数",
+            "type": "operation",
+            "from": [
+                1,
+                6
+            ],
+            "to": [
+                7
+            ]
+        },
+        {
+            "id": 9,
+            "content": "$2a + b = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 10,
+            "content": "将x=1代入导数并令其为0",
+            "type": "operation",
+            "from": [
+                4,
+                6
+            ],
+            "to": [
+                9
+            ]
+        },
+        {
+            "id": 11,
+            "content": "$a = -\\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 12,
+            "content": "$b = 1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 13,
+            "content": "解方程组求a和b的值",
+            "type": "operation",
+            "from": [
+                7,
+                9
+            ],
+            "to": [
+                11,
+                12
+            ]
+        },
+        {
+            "id": 14,
+            "content": "$f(x) = -\\\\frac{1}{2} x^2 + \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 15,
+            "content": "代入a和b的值得到原函数",
+            "type": "operation",
+            "from": [
+                1,
+                11,
+                12
+            ],
+            "to": [
+                14
+            ]
+        },
+        {
+            "id": 16,
+            "content": "$f'(x) = -x + \\\\frac{1}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 17,
+            "content": "代入a和b的值得到导数",
+            "type": "operation",
+            "from": [
+                4,
+                11,
+                12
+            ],
+            "to": [
+                16
+            ]
+        },
+        {
+            "id": 18,
+            "content": "$-x + \\\\frac{1}{x} = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 19,
+            "content": "令导数为0求临界点",
+            "type": "operation",
+            "from": [
+                16
+            ],
+            "to": [
+                18
+            ]
+        },
+        {
+            "id": 20,
+            "content": "$x = 1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 21,
+            "content": "解方程求出临界点",
+            "type": "operation",
+            "from": [
+                18
+            ],
+            "to": [
+                20
+            ]
+        },
+        {
+            "id": 22,
+            "content": "$x \\\\in (0, 1)$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 23,
+            "content": "$x \\\\in (1, +\\\\infty)$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 24,
+            "content": "划分单调区间",
+            "type": "operation",
+            "from": [
+                20
+            ],
+            "to": [
+                22,
+                23
+            ]
+        },
+        {
+            "id": 25,
+            "content": "$f(x)$在$(0, 1)$上单调递减",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 26,
+            "content": "$f(x)$在$(1, +\\\\infty)$上单调递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 27,
+            "content": "根据导数正负判断单调性",
+            "type": "operation",
+            "from": [
+                16,
+                22
+            ],
+            "to": [
+                25
+            ]
+        },
+        {
+            "id": 28,
+            "content": "根据导数正负判断单调性",
+            "type": "operation",
+            "from": [
+                16,
+                23
+            ],
+            "to": [
+                26
+            ]
+        },
+        {
+            "id": 29,
+            "content": "极小值$f(1) = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 30,
+            "content": "将x=1代入原函数求极值",
+            "type": "operation",
+            "from": [
+                14,
+                20
+            ],
+            "to": [
+                29
+            ]
+        }
+    ]
+}

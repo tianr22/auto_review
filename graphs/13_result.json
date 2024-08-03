@@ -1,0 +1,263 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "content": "$f(x) = ax^2 + b \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "content": "x=1",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "content": "f(1) = 1/2",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 4,
+            "content": "求导",
+            "type": "operation",
+            "from": [
+                1
+            ],
+            "to": []
+        },
+        {
+            "id": 5,
+            "content": "f'(x) = 2ax + \\\\frac{b}{x}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 6,
+            "content": "f'(1) = a + 0 = \\\\frac{1}{2}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 7,
+            "content": "a = \\\\frac{1}{2}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 8,
+            "content": "将x=1代入f'(x)",
+            "type": "operation",
+            "from": [
+                2,
+                5
+            ],
+            "to": [
+                6
+            ]
+        },
+        {
+            "id": 9,
+            "content": "解方程求a的值",
+            "type": "operation",
+            "from": [
+                6
+            ],
+            "to": [
+                7
+            ]
+        },
+        {
+            "id": 10,
+            "content": "2a + b = 0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 11,
+            "content": "b = -1",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 12,
+            "content": "根据f'(1)=0求b的值",
+            "type": "operation",
+            "from": [
+                7,
+                10
+            ],
+            "to": [
+                11
+            ]
+        },
+        {
+            "id": 13,
+            "content": "f(x) = \\\\frac{1}{2} x^2 - \\\\ln x",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 14,
+            "content": "将a和b的值代入f(x)",
+            "type": "operation",
+            "from": [
+                1,
+                7,
+                11
+            ],
+            "to": [
+                13
+            ]
+        },
+        {
+            "id": 15,
+            "content": "f'(x) = x - \\\\frac{1}{x}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 16,
+            "content": "再次求导",
+            "type": "operation",
+            "from": [
+                13
+            ],
+            "to": [
+                15
+            ]
+        },
+        {
+            "id": 17,
+            "content": "f'(x) = 0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 18,
+            "content": "x^2 - 1 = 0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 19,
+            "content": "x = \\\\pm 1",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 20,
+            "content": "解方程求f'(x)的零点",
+            "type": "operation",
+            "from": [
+                15,
+                17
+            ],
+            "to": [
+                18
+            ]
+        },
+        {
+            "id": 21,
+            "content": "求解x^2 - 1 = 0",
+            "type": "operation",
+            "from": [
+                18
+            ],
+            "to": [
+                19
+            ]
+        },
+        {
+            "id": 22,
+            "content": "f(1) = \\\\frac{1}{2}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 23,
+            "content": "f(-1) = \\\\frac{1}{2}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 24,
+            "content": "求f(1)的值",
+            "type": "operation",
+            "from": [
+                2,
+                13
+            ],
+            "to": [
+                22
+            ]
+        },
+        {
+            "id": 25,
+            "content": "求f(-1)的值",
+            "type": "operation",
+            "from": [
+                19,
+                13
+            ],
+            "to": [
+                23
+            ]
+        },
+        {
+            "id": 26,
+            "content": "f(x)的单调区间",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 27,
+            "content": "根据导数的零点和正负性判断单调区间",
+            "type": "operation",
+            "from": [
+                15,
+                19
+            ],
+            "to": [
+                26
+            ]
+        },
+        {
+            "id": 28,
+            "content": "f(x)的极值",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 29,
+            "content": "根据单调区间和f(x)的值求极值",
+            "type": "operation",
+            "from": [
+                22,
+                23,
+                26
+            ],
+            "to": [
+                28
+            ]
+        }
+    ]
+}

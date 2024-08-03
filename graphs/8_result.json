@@ -1,0 +1,215 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "content": "$f(x) = ax^2 + b \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "content": "x=1 处有极值 1/2",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "content": "求导",
+            "type": "operation",
+            "from": [
+                1
+            ],
+            "to": [
+                4
+            ]
+        },
+        {
+            "id": 4,
+            "content": "$f'(x) = 2ax + \\\\frac{b}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 5,
+            "content": "$f'(1) = 2a + b = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 6,
+            "content": "$f(1) = a$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 7,
+            "content": "代入极值点",
+            "type": "operation",
+            "from": [
+                2,
+                4
+            ],
+            "to": [
+                5,
+                6
+            ]
+        },
+        {
+            "id": 8,
+            "content": "a = \\\\frac{1}{2}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 9,
+            "content": "b = -1",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 10,
+            "content": "解方程组求a和b的值",
+            "type": "operation",
+            "from": [
+                5,
+                6
+            ],
+            "to": [
+                8,
+                9
+            ]
+        },
+        {
+            "id": 11,
+            "content": "定义域 $(0, +\\\\infty)$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 12,
+            "content": "确定函数定义域",
+            "type": "operation",
+            "from": [
+                1
+            ],
+            "to": [
+                11
+            ]
+        },
+        {
+            "id": 13,
+            "content": "$f(x) = \\\\frac{1}{2} x^2 - \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 14,
+            "content": "代入a和b的值",
+            "type": "operation",
+            "from": [
+                1,
+                8,
+                9
+            ],
+            "to": [
+                13
+            ]
+        },
+        {
+            "id": 15,
+            "content": "$f'(x) = x - \\\\frac{1}{x} = \\\\frac{x^2 - 1}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 16,
+            "content": "代入a和b的值求导数",
+            "type": "operation",
+            "from": [
+                4,
+                8,
+                9
+            ],
+            "to": [
+                15
+            ]
+        },
+        {
+            "id": 17,
+            "content": "令 $f'(x) = 0$",
+            "type": "operation",
+            "from": [
+                15
+            ],
+            "to": [
+                18
+            ]
+        },
+        {
+            "id": 18,
+            "content": "$x^2 - 1 = 0 \\\\Rightarrow x = \\\\pm 1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 19,
+            "content": "求导数的零点",
+            "type": "operation",
+            "from": [
+                15
+            ],
+            "to": [
+                18
+            ]
+        },
+        {
+            "id": 20,
+            "content": "f(x)在$(0, 1)$上单调递减，在$(1, +\\\\infty)$上单调递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 21,
+            "content": "根据导数零点判断单调区间",
+            "type": "operation",
+            "from": [
+                11,
+                18
+            ],
+            "to": [
+                20
+            ]
+        },
+        {
+            "id": 22,
+            "content": "极值 $f(1) = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 23,
+            "content": "根据极值点求极值",
+            "type": "operation",
+            "from": [
+                2,
+                13
+            ],
+            "to": [
+                22
+            ]
+        }
+    ]
+}

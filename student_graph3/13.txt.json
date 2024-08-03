@@ -1,0 +1,180 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "factid": 1,
+            "content": "$f(x) = ax^2 + b \\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "factid": 2,
+            "content": "$f(x)$ 在 $x=1$ 处有极值 $\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "factid": 5,
+            "content": "$f(1) = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 4,
+            "factid": 7,
+            "content": "$a = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 5,
+            "factid": 3,
+            "content": "$f'(x) = 2ax + \\frac{b}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 6,
+            "factid": 4,
+            "content": "$f'(1) = 2a + b = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 7,
+            "factid": 8,
+            "content": "$b = -1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 8,
+            "content": "求函数导数",
+            "type": "operation",
+            "from": [1],
+            "to": [5]
+        },
+        {
+            "id": 9,
+            "content": "利用极值条件建立方程",
+            "type": "operation",
+            "from": [2, 5],
+            "to": [6]
+        },
+        {
+            "id": 10,
+            "content": "代入数值化简方程",
+            "type": "operation",
+            "from": [3, 6],
+            "to": [4, 7]
+        },
+        {
+            "id": 11,
+            "factid": 9,
+            "content": "$f(x) = \\frac{1}{2}x^2 - \\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 12,
+            "content": "将a和b的值代入原函数",
+            "type": "operation",
+            "from": [4, 7],
+            "to": [11]
+        },
+        {
+            "id": 13,
+            "factid": 10,
+            "content": "$f'(x) = x - \\frac{1}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 14,
+            "content": "求新的导数",
+            "type": "operation",
+            "from": [11],
+            "to": [13]
+        },
+        {
+            "id": 15,
+            "factid": 12,
+            "content": "$f'(x) = 0$ 时, $x^2 - 1 = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 16,
+            "factid": 18,
+            "content": "$f'(x) = 0, x = \\pm 1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 17,
+            "content": "解导数等于零的方程",
+            "type": "operation",
+            "from": [13],
+            "to": [15, 16]
+        },
+        {
+            "id": 18,
+            "factid": 14,
+            "content": "$f(x)$ 在 $(0, 1)$ 上单调递减",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 19,
+            "factid": 15,
+            "content": "$f(x)$ 在 $(1, +\\infty)$ 上单调递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 20,
+            "content": "判断单调区间",
+            "type": "operation",
+            "from": [16],
+            "to": [18, 19]
+        },
+        {
+            "id": 21,
+            "factid": 19,
+            "content": "$x=1$ 处有极小值 $f(1) = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 22,
+            "factid": 22,
+            "content": "$f(-1) = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 23,
+            "content": "求极值",
+            "type": "operation",
+            "from": [16],
+            "to": [21, 22]
+        }
+    ]
+}

@@ -1,0 +1,217 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "content": "$f(x) = ax^2 + b \\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "content": "在 x=1 处有极值 1/2",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "content": "f'(x)=2ax + \\\\frac{b}{x}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 4,
+            "content": "求导",
+            "type": "operation",
+            "from": [
+                1
+            ],
+            "to": [
+                3
+            ]
+        },
+        {
+            "id": 5,
+            "content": "f'(1)=2a+b=\\\\frac{1}{2}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 6,
+            "content": "f(1)=a+b=0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 7,
+            "content": "将 x=1 代入导数表达式",
+            "type": "operation",
+            "from": [
+                2,
+                3
+            ],
+            "to": [
+                5
+            ]
+        },
+        {
+            "id": 8,
+            "content": "将 x=1 代入原函数表达式",
+            "type": "operation",
+            "from": [
+                1,
+                2
+            ],
+            "to": [
+                6
+            ]
+        },
+        {
+            "id": 9,
+            "content": "联立方程求解 a 和 b",
+            "type": "operation",
+            "from": [
+                5,
+                6
+            ],
+            "to": []
+        },
+        {
+            "id": 10,
+            "content": "a=\\\\frac{1}{2}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 11,
+            "content": "b=-\\\\frac{1}{2}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 12,
+            "content": "f(x)=\\\\frac{1}{2}x^2 - \\\\frac{1}{2}\\\\ln x",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 13,
+            "content": "将求得的 a 和 b 值代入原函数",
+            "type": "operation",
+            "from": [
+                10,
+                11,
+                1
+            ],
+            "to": [
+                12
+            ]
+        },
+        {
+            "id": 14,
+            "content": "f'(x)=x - \\\\frac{1}{2x}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 15,
+            "content": "将求得的 a 和 b 值代入导数表达式",
+            "type": "operation",
+            "from": [
+                10,
+                11,
+                3
+            ],
+            "to": [
+                14
+            ]
+        },
+        {
+            "id": 16,
+            "content": "f'(x)=0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 17,
+            "content": "x=\\\\frac{\\\\sqrt{2}}{2} 或 x=-\\\\frac{\\\\sqrt{2}}{2}",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 18,
+            "content": "令导数等于0求 x 的值",
+            "type": "operation",
+            "from": [
+                14,
+                16
+            ],
+            "to": [
+                17
+            ]
+        },
+        {
+            "id": 19,
+            "content": "(-\\\\infty, -\\\\frac{\\\\sqrt{2}}{2}) (\\\\frac{\\\\sqrt{2}}{2}, +\\\\infty) 单调递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 20,
+            "content": "(-\\\\frac{\\\\sqrt{2}}{2}, \\\\frac{\\\\sqrt{2}}{2}) 单调递减",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 21,
+            "content": "根据导数的零点划分单调区间",
+            "type": "operation",
+            "from": [
+                17
+            ],
+            "to": [
+                19,
+                20
+            ]
+        },
+        {
+            "id": 22,
+            "content": "f'(-\\\\frac{\\\\sqrt{2}}{2})=0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 23,
+            "content": "f'(\\\\frac{\\\\sqrt{2}}{2})=0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 24,
+            "content": "将 x 的值代入导数表达式求极值",
+            "type": "operation",
+            "from": [
+                14,
+                17
+            ],
+            "to": [
+                22,
+                23
+            ]
+        }
+    ]
+}

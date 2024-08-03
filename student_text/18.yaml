@@ -1,0 +1,59 @@
+written_text:
+  \[
+  \text{①} \ x > 0
+  \]
+
+  \[
+  \ f'(x) = 2ax + \frac{b}{x}
+  \]
+
+  \[
+  \text{③ 令} \ x = 1 \quad f'(1) = 2a + b = 0
+  \]
+
+  \[
+  f(1) = a + b \ln 1 = \frac{1}{2} \quad \Rightarrow \quad a = \frac{1}{2}
+  \]
+
+  \[
+  2a + b = 0 \quad \Rightarrow \quad 2 \times \frac{1}{2} + b = 0 \quad \Rightarrow \quad b = -1
+  \]
+
+  \[
+  \text{①} \ x > 0
+  \]
+
+  \[
+  \text{②} \ f(x) = \frac{1}{2} x^2 - \ln x
+  \]
+
+  \[
+  \text{③} \ f'(x) = x - \frac{1}{x}
+  \]
+
+  \[
+  \text{令} \ f'(x) = 0 \quad \Rightarrow \quad x^2 - 1 = 0 \quad \Rightarrow \quad (x + 1)(x - 1) = 0 \quad \Rightarrow \quad x_1 = -1, \ x_2 = 1
+  \]
+
+  \[
+  \text{④} \ f(x) \text{在} (0, 1) \text{上} < 0, \ f(x) \text{在} (0, 1) \downarrow >
+  \]
+
+  \[
+  f(x) \text{在} (1, +\infty) \text{上} > 0, \ f(x) \text{在} (1, +\infty) \uparrow >
+  \]
+
+  \[
+  \text{⑤} \ f(x) \text{在} (0, 1) \text{上} \downarrow, \ f(x) \text{在} (1, +\infty) \text{上} \uparrow
+  \]
+
+audio_text:
+  已知函数 F(x) 等于 ax 平方加 b 乘以 ln(x)，看到 ln(x) 的话，它的定义域就是 x 大于 0，然后在 x 等于一处有极值 1/2。这句话可以知道两个信息，第一个就是，F'(1) 等于 0，第二个就是 F(1) 等于 1/2，然后根据这两个方程就可以解出 a 和 b 的值。
+
+  那第一步先写它的定义域，x 大于 0。第二步求导，然后，ax 平方的导数就等于 2ax，然后 b 乘以 ln(x) 的导数就等于 b/x。然后求导之后，再根据他后面给的这个信息，他说在 x 等于一处有极值 1/2，那先带入原函数里，在 x 等于一处 F(1) 等于 1/2，然后把 x 等于一带入，然后可以得到一个式子。然后，这句话还可以得到一个信息，就是 F'(1) 的导数等于 0，然后导函数已经求出来了。然后，在它的导函数里令 x 等于一。
+problem: 
+    已知函数 $f(x) = ax^2 + b \ln x$ 在 x=1 处有极值 1/2.
+
+    (1) 求 a, b 的值;
+
+    (2) 求出 f(x) 的单调区间，并求极值.

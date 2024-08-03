@@ -1,0 +1,204 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "content": "$f(x) = ax^2 + b \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "content": "x=1 处有极值 1/2",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "content": "求导 $f'(x) = 2ax + \\\\frac{b}{x}$",
+            "type": "operation",
+            "from": [
+                1
+            ],
+            "to": []
+        },
+        {
+            "id": 4,
+            "content": "$f'(1) = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 5,
+            "content": "$f(1) = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 6,
+            "content": "联立方程求解",
+            "type": "operation",
+            "from": [
+                2,
+                4,
+                5
+            ],
+            "to": []
+        },
+        {
+            "id": 7,
+            "content": "$a = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 8,
+            "content": "$b = -1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 9,
+            "content": "解得 $a = \\\\frac{1}{2}, b = -1$",
+            "type": "operation",
+            "from": [
+                6
+            ],
+            "to": [
+                7,
+                8
+            ]
+        },
+        {
+            "id": 10,
+            "content": "$f(x) = \\\\frac{1}{2}x^2 - \\\\ln x$",
+            "type": "fact",
+            "from": [
+                7,
+                8
+            ],
+            "to": []
+        },
+        {
+            "id": 11,
+            "content": "求导 $f'(x) = x - \\\\frac{1}{x}$",
+            "type": "operation",
+            "from": [
+                10
+            ],
+            "to": []
+        },
+        {
+            "id": 12,
+            "content": "令 $f'(x) = 0$",
+            "type": "operation",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 13,
+            "content": "$x^2 - 1 = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 14,
+            "content": "解方程 $x^2 = 1$",
+            "type": "operation",
+            "from": [
+                12,
+                13
+            ],
+            "to": []
+        },
+        {
+            "id": 15,
+            "content": "$x = \\\\pm 1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 16,
+            "content": "求解导数零点",
+            "type": "operation",
+            "from": [
+                11,
+                14
+            ],
+            "to": [
+                15
+            ]
+        },
+        {
+            "id": 17,
+            "content": "单调区间判断",
+            "type": "operation",
+            "from": [
+                11,
+                15
+            ],
+            "to": []
+        },
+        {
+            "id": 18,
+            "content": "当 $x = -1$ 时 $f(x)$ 有极大值",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 19,
+            "content": "当 $x = 1$ 时 $f(x)$ 有极小值",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 20,
+            "content": "求极值",
+            "type": "operation",
+            "from": [
+                10,
+                15
+            ],
+            "to": [
+                18,
+                19
+            ]
+        },
+        {
+            "id": 21,
+            "content": "$f(x)_{max} = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 22,
+            "content": "$f(x)_{min} = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 23,
+            "content": "计算极值",
+            "type": "operation",
+            "from": [
+                18,
+                19
+            ],
+            "to": [
+                21,
+                22
+            ]
+        }
+    ]
+}

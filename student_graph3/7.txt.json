@@ -1,0 +1,172 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "factid": 1,
+            "content": "$f(x) = ax^2 + b \\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "factid": 2,
+            "content": "$f(x)$ 在 $x=1$ 处有极值 $\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "content": "求函数导数",
+            "type": "operation",
+            "from": [1],
+            "to": [4]
+        },
+        {
+            "id": 4,
+            "factid": 3,
+            "content": "$f'(x) = 2ax + \\frac{b}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 5,
+            "content": "利用极值条件建立方程",
+            "type": "operation",
+            "from": [2, 4],
+            "to": [6, 7]
+        },
+        {
+            "id": 6,
+            "factid": 4,
+            "content": "$f'(1) = 2a + b = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 7,
+            "factid": 5,
+            "content": "$f(1) = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 8,
+            "content": "代入数值化简方程",
+            "type": "operation",
+            "from": [6, 7],
+            "to": [9, 10]
+        },
+        {
+            "id": 9,
+            "factid": 7,
+            "content": "$a = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 10,
+            "factid": 8,
+            "content": "$b = -1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 11,
+            "content": "将求得的a和b代入函数和导数表达式",
+            "type": "operation",
+            "from": [9, 10],
+            "to": [12, 13]
+        },
+        {
+            "id": 12,
+            "factid": 9,
+            "content": "$f(x) = \\frac{1}{2}x^2 - \\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 13,
+            "factid": 10,
+            "content": "$f'(x) = x - \\frac{1}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 14,
+            "content": "求导数为零的点",
+            "type": "operation",
+            "from": [13],
+            "to": [15]
+        },
+        {
+            "id": 15,
+            "factid": 13,
+            "content": "$f'(x) = 0$ 时, $x = 1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 16,
+            "content": "确定函数的定义域",
+            "type": "operation",
+            "from": [1],
+            "to": [17]
+        },
+        {
+            "id": 17,
+            "factid": 11,
+            "content": "定义域 $(0, +\\infty)$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 18,
+            "content": "分析函数的单调性",
+            "type": "operation",
+            "from": [13, 15, 17],
+            "to": [19, 20]
+        },
+        {
+            "id": 19,
+            "factid": 14,
+            "content": "$f(x)$ 在 $(0, 1)$ 上单调递减",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 20,
+            "factid": 15,
+            "content": "$f(x)$ 在 $(1, +\\infty)$ 上单调递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 21,
+            "content": "求极值",
+            "type": "operation",
+            "from": [2, 15],
+            "to": [22]
+        },
+        {
+            "id": 22,
+            "factid": 19,
+            "content": "$x=1$ 处有极小值 $f(1) = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        }
+    ]
+}

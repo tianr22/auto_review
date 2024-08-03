@@ -1,0 +1,295 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "content": "$f(x) = ax^2 + b \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "content": "x=1 处有极值 1/2",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "content": "$f'(x) = 2ax + \\\\frac{b}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 4,
+            "content": "求导",
+            "type": "operation",
+            "from": [
+                1
+            ],
+            "to": [
+                3
+            ]
+        },
+        {
+            "id": 5,
+            "content": "导数等于0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 6,
+            "content": "极值条件",
+            "type": "operation",
+            "from": [
+                3
+            ],
+            "to": [
+                5
+            ]
+        },
+        {
+            "id": 7,
+            "content": "$2ax + \\\\frac{b}{1} = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 8,
+            "content": "代入x=1求导数为0的条件",
+            "type": "operation",
+            "from": [
+                3,
+                2
+            ],
+            "to": [
+                7
+            ]
+        },
+        {
+            "id": 9,
+            "content": "$a \\\\cdot 1^2 + b \\\\ln 1 = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 10,
+            "content": "代入x=1求极值",
+            "type": "operation",
+            "from": [
+                1,
+                2
+            ],
+            "to": [
+                9
+            ]
+        },
+        {
+            "id": 11,
+            "content": "$a = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 12,
+            "content": "解方程求a的值",
+            "type": "operation",
+            "from": [
+                9
+            ],
+            "to": [
+                11
+            ]
+        },
+        {
+            "id": 13,
+            "content": "$2a + b = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 14,
+            "content": "由导数为0得到方程",
+            "type": "operation",
+            "from": [
+                5,
+                7
+            ],
+            "to": [
+                13
+            ]
+        },
+        {
+            "id": 15,
+            "content": "$b = -1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 16,
+            "content": "代入a的值求解b",
+            "type": "operation",
+            "from": [
+                11,
+                13
+            ],
+            "to": [
+                15
+            ]
+        },
+        {
+            "id": 17,
+            "content": "$f(x) = \\\\frac{1}{2}x^2 - \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 18,
+            "content": "代入a和b的值得到新的函数表达式",
+            "type": "operation",
+            "from": [
+                1,
+                11,
+                15
+            ],
+            "to": [
+                17
+            ]
+        },
+        {
+            "id": 19,
+            "content": "$f'(x) = x - \\\\frac{1}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 20,
+            "content": "求导",
+            "type": "operation",
+            "from": [
+                17
+            ],
+            "to": [
+                19
+            ]
+        },
+        {
+            "id": 21,
+            "content": "$f'(x) = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 22,
+            "content": "令导数等于0求极值点",
+            "type": "operation",
+            "from": [
+                19
+            ],
+            "to": [
+                21
+            ]
+        },
+        {
+            "id": 23,
+            "content": "$x = 1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 24,
+            "content": "解方程求x的值",
+            "type": "operation",
+            "from": [
+                21
+            ],
+            "to": [
+                23
+            ]
+        },
+        {
+            "id": 25,
+            "content": "(-\\infty, 1)",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 26,
+            "content": "(1, +\\infty)",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 27,
+            "content": "划分单调区间",
+            "type": "operation",
+            "from": [
+                23
+            ],
+            "to": [
+                25,
+                26
+            ]
+        },
+        {
+            "id": 28,
+            "content": "$f(x)$ 在 $(-\\infty, 1)$ 上单调递减",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 29,
+            "content": "$f(x)$ 在 $(1, +\\infty)$ 上单调递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 30,
+            "content": "根据导数判断单调性",
+            "type": "operation",
+            "from": [
+                19,
+                25,
+                26
+            ],
+            "to": [
+                28,
+                29
+            ]
+        },
+        {
+            "id": 31,
+            "content": "$f(1) = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 32,
+            "content": "代入x=1求极值",
+            "type": "operation",
+            "from": [
+                17,
+                23
+            ],
+            "to": [
+                31
+            ]
+        }
+    ]
+}

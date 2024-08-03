@@ -1,0 +1,256 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "factid": 1,
+            "content": "$f(x) = ax^2 + b \\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "factid": 6,
+            "content": "定义域 $x > 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "content": "确定函数的定义域",
+            "type": "operation",
+            "from": [1],
+            "to": [2]
+        },
+        {
+            "id": 4,
+            "factid": 4,
+            "content": "$f'(x) = 2ax + \\frac{b}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 5,
+            "content": "求导数",
+            "type": "operation",
+            "from": [1],
+            "to": [4]
+        },
+        {
+            "id": 6,
+            "factid": 2,
+            "content": "x=1 处有极值 1/2",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 7,
+            "factid": 7,
+            "content": "$f'(1) = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 8,
+            "factid": 9,
+            "content": "$f(1) = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 9,
+            "content": "利用极值条件建立方程",
+            "type": "operation",
+            "from": [6, 4],
+            "to": [7, 8]
+        },
+        {
+            "id": 10,
+            "factid": 10,
+            "content": "$2a + b = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 11,
+            "factid": 11,
+            "content": "$a + b \\ln 1 = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 12,
+            "content": "代入数值化简方程",
+            "type": "operation",
+            "from": [7, 8],
+            "to": [10, 11]
+        },
+        {
+            "id": 13,
+            "factid": 14,
+            "content": "$a = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 14,
+            "factid": 15,
+            "content": "$b = -1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 15,
+            "content": "求得a和b的具体值",
+            "type": "operation",
+            "from": [10, 11],
+            "to": [13, 14]
+        },
+        {
+            "id": 16,
+            "factid": 17,
+            "content": "$f(x) = \\frac{1}{2}x^2 - \\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 17,
+            "content": "代入a和b的值得到原函数表达式",
+            "type": "operation",
+            "from": [1, 13, 14],
+            "to": [16]
+        },
+        {
+            "id": 18,
+            "factid": 19,
+            "content": "$f'(x) = x - \\frac{1}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 19,
+            "content": "求导得到导数表达式",
+            "type": "operation",
+            "from": [16],
+            "to": [18]
+        },
+        {
+            "id": 20,
+            "factid": 22,
+            "content": "$f'(x) = 0$ 时 $x^2 - 1 = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 21,
+            "content": "求导数函数零点并化简方程",
+            "type": "operation",
+            "from": [18],
+            "to": [20]
+        },
+        {
+            "id": 22,
+            "factid": 25,
+            "content": "$x = 1$ 或 $x = -1$ $f'(x) = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 23,
+            "content": "求解方程得到方程的根",
+            "type": "operation",
+            "from": [20],
+            "to": [22]
+        },
+        {
+            "id": 24,
+            "factid": 27,
+            "content": "$x = -1$ 不在定义域内",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 25,
+            "factid": 28,
+            "content": "$x = 1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 26,
+            "content": "根据定义域确定极值点",
+            "type": "operation",
+            "from": [2, 22],
+            "to": [24, 25]
+        },
+        {
+            "id": 27,
+            "factid": 32,
+            "content": "$f(x)$ 在 $(0, 1)$ 上单调递减",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 28,
+            "factid": 36,
+            "content": "$f(x)$ 在 $(1, +\\infty)$ 上单调递增",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 29,
+            "factid": 41,
+            "content": "$x = 1$ 处有极小值",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 30,
+            "content": "根据导数正负判断单调性和极值类型",
+            "type": "operation",
+            "from": [18, 2, 25],
+            "to": [27, 28, 29]
+        },
+        {
+            "id": 31,
+            "factid": 42,
+            "content": "$f(1) = \\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 32,
+            "factid": 46,
+            "content": "无极大值",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 33,
+            "content": "根据单调区间判断极大值的存在性",
+            "type": "operation",
+            "from": [27, 28],
+            "to": [32]
+        }
+    ]
+}

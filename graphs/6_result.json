@@ -1,0 +1,212 @@
+{
+    "nodes": [
+        {
+            "id": 1,
+            "content": "$f(x) = ax^2 + b \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 2,
+            "content": "x=1 处有极值 1/2",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 3,
+            "content": "求导",
+            "type": "operation",
+            "from": [
+                1
+            ],
+            "to": []
+        },
+        {
+            "id": 4,
+            "content": "$f'(x) = 2ax + \\\\frac{b}{x}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 5,
+            "content": "代入极值条件",
+            "type": "operation",
+            "from": [
+                2,
+                4
+            ],
+            "to": []
+        },
+        {
+            "id": 6,
+            "content": "$2a + b = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 7,
+            "content": "$a + b \\\\ln 1 = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 8,
+            "content": "解方程组求a, b",
+            "type": "operation",
+            "from": [
+                6,
+                7
+            ],
+            "to": []
+        },
+        {
+            "id": 9,
+            "content": "$a = \\\\frac{1}{2}$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 10,
+            "content": "$b = -1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 11,
+            "content": "$f(x)=\\\\frac{1}{2}x^2 - \\\\ln x$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 12,
+            "content": "代入a, b求f(x)",
+            "type": "operation",
+            "from": [
+                9,
+                10
+            ],
+            "to": [
+                11
+            ]
+        },
+        {
+            "id": 13,
+            "content": "求导数的零点",
+            "type": "operation",
+            "from": [
+                4,
+                9,
+                10
+            ],
+            "to": []
+        },
+        {
+            "id": 14,
+            "content": "$x - \\\\frac{1}{x} = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 15,
+            "content": "$x^2 - 1 = 0$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 16,
+            "content": "$x = \\\\pm 1$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 17,
+            "content": "求f'(x)的符号变化",
+            "type": "operation",
+            "from": [
+                4,
+                16
+            ],
+            "to": []
+        },
+        {
+            "id": 18,
+            "content": "(-\\infty, -1) 上 f'(x) > 0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 19,
+            "content": "(-1, 1) 上 f'(x) < 0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 20,
+            "content": "(1, +\\infty) 上 f'(x) > 0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 21,
+            "content": "f(x)的单调区间",
+            "type": "operation",
+            "from": [
+                18,
+                19,
+                20
+            ],
+            "to": []
+        },
+        {
+            "id": 22,
+            "content": "$f(x)_{min} = 1/2$",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 23,
+            "content": "根据极值点求f(x)的极值",
+            "type": "operation",
+            "from": [
+                2,
+                11
+            ],
+            "to": [
+                22
+            ]
+        },
+        {
+            "id": 24,
+            "content": "x \\ge 0",
+            "type": "fact",
+            "from": [],
+            "to": []
+        },
+        {
+            "id": 25,
+            "content": "确定定义域",
+            "type": "operation",
+            "from": [
+                1
+            ],
+            "to": [
+                24
+            ]
+        }
+    ]
+}
