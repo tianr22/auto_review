@@ -9,6 +9,8 @@ class Info:
         self.operation_wrong = kwargs.get('operation_wrong', {} )
         self.student_num = kwargs.get('student_num', 0 )
         self.fact_info = kwargs.get('fact_info', [] )
+        ## 记录对应的fact_id在哪些学生中出现，用于后续的select_student
+        self.fact_num = kwargs.get('fact_num', [])
         self.student_op_num = kwargs.get('student_op_num', [] )
         self.student_fact_num = kwargs.get('student_fact_num', [] )
         self.pair_info = kwargs.get('pair_info', [] )
@@ -21,6 +23,7 @@ class Info:
         self.operation_wrong = kwargs.get('operation_wrong', self.operation_wrong)
         self.student_num = kwargs.get('student_num', self.student_num)
         self.fact_info = kwargs.get('fact_info', self.fact_info)
+        self.fact_num = kwargs.get('fact_num', self.fact_num)
         self.student_op_num = kwargs.get('student_op_num', self.student_op_num)
         self.student_fact_num = kwargs.get('student_fact_num', self.student_fact_num)
         self.pair_info = kwargs.get('pair_info', self.pair_info)
@@ -40,20 +43,15 @@ class Info:
         return obj
 
 ## DONE
-def get_all_student_json_files(json_dic_path,ignore=False,student_status=None):
+def get_all_student_json_files(json_dic_path,ignore=False,student_status=None,ignore_status=None):
     json_files = os.listdir(json_dic_path)
     json_files=[json_file for json_file in json_files if json_file.endswith(".json") and json_file[0].isdigit()]
     json_files=sorted(json_files)
     if not ignore:
         return json_files
     if student_status is not None:
-        json_files=[json_file for index,json_file in enumerate(json_files) if student_status[index]!='A']
+        json_files=[json_file for index,json_file in enumerate(json_files) if student_status[index] not in ignore_status]
         return json_files
-
-## TODO  
-def select_student():
-    ## 选择下一个进行批改的学生
-    pass
 
 ## DONE
 ## 读取judge info
@@ -143,8 +141,11 @@ def refresh_backend_data(json_dic_path,store_path,same_in_df_right_path):
                 elif is_from_correct != is_to_correct:
                     operation_wrong[id].append(op_node['id'])
                     operation_status[id][index]='B_fact'
-                if all(_=='B_fact' for _ in operation_status[id]):
-                    student_status[id]='B'
+                if all(_!='C' for _ in operation_status[id]):
+                    if all(_=='known' for _ in student_fact_status[id]):
+                        student_status[id]='B+'
+                    else:
+                        student_status[id]='B'
                                              
     # 根据现在的operation的正误，更新pair的正误
     while True:
@@ -203,10 +204,13 @@ def refresh_backend_data(json_dic_path,store_path,same_in_df_right_path):
                                 operation_status[id][index]='B_pair'
                                 is_need_continue=True
                 if all(_!='C' for _ in operation_status[id]):
-                    student_status[id]='B'
+                    if all(_=='known' for _ in student_fact_status[id]):
+                        student_status[id]='B+'
+                    else:
+                        student_status[id]='B'
         if not is_need_continue:
             break
-        
+
     info.update(student_fact_status=student_fact_status,
                 operation_right=operation_right,
                 operation_wrong=operation_wrong,
@@ -219,7 +223,8 @@ def refresh_backend_data(json_dic_path,store_path,same_in_df_right_path):
 ## DONE
 def is_finished(store_path):
     info = Info.load_from_json(store_path)
-    if all(_!='C' for _ in info.student_status):
+    # 如果老师手动批改，或fact，op均推断完全
+    if all(_== 'A' or _=='B+' for _ in info.student_status):
         return True
     return False
 
@@ -239,6 +244,8 @@ def judge_init(json_dic_path,store_path,fact_list_path,same_in_df_right_path):
     operation_right={}
     operation_wrong={}
     student_fact_status={}
+    ## 记录每个factid在哪些学生中出现
+    fact_num = [[] for _ in range(fact_list_length)]
     with open(same_in_df_right_path) as f:
         data_same_in = pd.read_csv(f)
     ## 表示pair的正误,-1表示未知
@@ -247,7 +254,7 @@ def judge_init(json_dic_path,store_path,fact_list_path,same_in_df_right_path):
     # 学生数量
     num_student=len(json_files)
     # 学生共有两种状态，老师手动批改过的学生为A，自动推断批完的学生为B，其余为C
-    # Update
+    # Update: op全部批改学生状态变为B，fact全部批改学生状态变为B+
     student_status=['C' for _ in range(num_student)]
     student_op_num=[]
     student_fact_num=[]
@@ -258,6 +265,8 @@ def judge_init(json_dic_path,store_path,fact_list_path,same_in_df_right_path):
             student_data=json.load(json_file)
             student_nodes=student_data['nodes']
             student_fact_nodes=[fact_node for fact_node in student_nodes if fact_node['type']=='fact']
+            for fact_node in student_fact_nodes:
+                fact_num[fact_node['factid']-1].append(index)
             student_op_nodes=[op_node for op_node in student_nodes if op_node['type']=='operation']
             student_op_num.append(len(student_op_nodes))
             student_fact_num.append(len(student_fact_nodes))
@@ -276,15 +285,77 @@ def judge_init(json_dic_path,store_path,fact_list_path,same_in_df_right_path):
               student_fact_num=student_fact_num,
               pair_info=pair_info,
               student_status=student_status,
-              operation_status=operation_status
+              operation_status=operation_status,
+              fact_num=fact_num
               )
     info.save_as_json(store_path)
+
+## DONE
+## TO BE CHECKED
+def select_student(store_path,json_dic_path,same_in_df_right_path,coefficient=0.5):
+    ## 选择下一个进行批改的学生
+    ## 选择策略；遵循信息增量最大化的原则，选择能覆盖未批改学生fact和op最多的一个学生
+    
+    ## 计算能覆盖未批改学生的fact数
+    info,data_same_in=read_info(store_path,same_in_df_right_path)
+    student_status = info.student_status
+    fact_info = info.fact_info
+    fact_num = info.fact_num
+    student_num = info.student_num
+    pair_info = info.pair_info
+    operation_status = info.operation_status
+    fact_gain=[0 for _ in range(student_num)]
+    op_gain=[0 for _ in range(info.student_num)]  
+    json_files = get_all_student_json_files(json_dic_path)
+    for index,json_file in enumerate(json_files):
+        if student_status[index] == 'A' or student_status[index] == 'B+':
+            continue
+        with open(json_dic_path+json_file, 'r') as file:
+            data=json.load(file)
+            nodes=data["nodes"]
+            op_nodes=[node for node in nodes if node['type']=='operation']
+            unknown_op_nodes=[op_node for i,op_node in enumerate(op_nodes) if operation_status[index][i]=='C']
+            op_gain[index]=len(unknown_op_nodes)
+            fact_nodes=[node for node in nodes if node['type']=='fact']
+            for fact_node in fact_nodes:
+                if fact_info[fact_node['factid']-1]==-1:
+                    fact_gain[index]+=len(fact_num[fact_node['factid']-1])
+    
+    ## 计算能覆盖未批改学生的op数
+    for index,json_file in enumerate(json_files):
+        if student_status[index] != 'C':
+            continue
+        cover_list = [set([]) for t in range(student_num)]
+        for pair_id in range(len(data_same_in)):
+            if pair_info[pair_id]!=-1 or data_same_in.loc[pair_id,str(index+1)]=="set()":
+                continue
+            for student_id in range(student_num):
+                if student_id == index or student_status[student_id] != 'C':
+                    continue
+                consist_ops = ast.literal_eval(data_same_in.loc[pair_id, str(student_id + 1)])
+                consist_ops_sorted = []
+                with open(json_dic_path+json_files[student_id], 'r') as file:
+                    data=json.load(file)
+                    nodes=data["nodes"]
+                    op_nodes=[node for node in nodes if node['type']=='operation']
+                    for i,op_node in enumerate(op_nodes):
+                        if op_node['id'] in consist_ops:
+                            consist_ops_sorted.append(i)
+                consist_unknown_ops=[node for node in consist_ops_sorted if operation_status[student_id][node]=='C']
+                cover_list[student_id]=cover_list[student_id].union(set(consist_unknown_ops))
+        for student_id in range(student_num):
+            op_gain[student_id]+=len(cover_list[student_id])
+    ## 选择能覆盖未批改学生最多的学生
+    total_gain=[fg*coefficient+(1-coefficient)*og for fg,og in zip(fact_gain,op_gain)]
+    return total_gain.index(max(total_gain))
 
 ## DONE
 def auto_judge(review_id,update_data,json_dic_path,store_path,same_in_df_right_path):
     ## review_id为批改学生id
     ## 根据一次学生作业数据自动批改，返回下一个批改的学生
+    ## 更新批改的学生的信息
     refresh_student_data(review_id,update_data)
+    ## 自动批改
     refresh_backend_data(json_dic_path,store_path,same_in_df_right_path)
     if is_finished(store_path):
         return "Already finish"
