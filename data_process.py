@@ -5,7 +5,7 @@ import os
 from functools import reduce
 # DONE
 # TO BE CHECKED
-def get_subgraph(factid,json_dic_path,json_file_path):
+def get_subgraph_from(factid,json_dic_path,json_file_path):
     with open(json_dic_path+json_file_path,'r') as file:
         data=json.load(file)
         nodes=data['nodes']
@@ -73,7 +73,7 @@ def intersection(fact_id,json_dic_path):
             if any([fact_node['factid']==fact_id for fact_node in fact_nodes]):
                 is_include = True
                 include_student_id_list.append(index)
-                searched_fact_list,_ = get_subgraph(fact_id,json_dic_path,json_file)
+                searched_fact_list,_ = get_subgraph_from(fact_id,json_dic_path,json_file)
                 searched_fact_id_list=set([get_fact_id(student_fact,json_dic_path,json_file) for student_fact in searched_fact_list])
                 subgraph_list.append(searched_fact_id_list)
 
@@ -82,7 +82,11 @@ def intersection(fact_id,json_dic_path):
     ## 返回包含这个fact_id的所有学生index和最大交集
     return include_student_id_list,max_intersection
 
+    
 
-## TODO K-means
-def classify():
-    pass
+            
+
+
+
+
+                

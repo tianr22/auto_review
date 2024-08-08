@@ -11,6 +11,7 @@ import numpy as np
 with open("/home/user/shared/solving_data/data/same_in_df_right.csv") as f:
     data_same_in = pd.read_csv(f)
 # pair op的并集 占比
+## 没用
 from_student_id_list = np.load("/home/user/shared/solving_data/data/from_student_id_list.npy", allow_pickle=True)
 
 json_files = os.listdir('/home/user/shared/solving_data/test_graph')
@@ -29,10 +30,9 @@ for json_file in json_files:
     print("in")
     with open(f'/home/user/shared/solving_data/test_graph/{json_file}', 'r') as file:
         data = json.load(file) 
-        print("look",json_file[0])
         nodes = data["nodes"]
+        ## 得到op_node
         student_node = [node['id'] for node in nodes if node['type'] == 'operation']
-        print(json_file[0])
         student_nodes[int(json_file[0])-1] = student_node
 
 print("student_node",student_nodes)
@@ -77,6 +77,7 @@ def get_max_cover_from_one_student(student_n,pair_json):
 
 # 在选取好了第一个学生之后还需要选择哪些pair才能够最高效的对所有的op进行覆盖，有点像一个特殊的最小覆盖问题
 # 不过这一条暂时舍弃，我们应该不会给老师呈现pair让老师去批改
+## 注意！下面这个函数暂时没用
 def get_max_cover_node(student_nodes, covered_pair_id_list, covered_node_list, choosen_student_id_list,dataset):
     max_cover_num = 0
     result_list = []
