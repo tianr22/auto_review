@@ -167,19 +167,15 @@ def judge_logic(fact_id_cnt,max_fact_id_list,contained_fact,json_dic_path,start_
                     op_node['from'] = [get_fact_id(fact,json_dic_path,json_file) for fact in op_node['from']]
                     op_node['to'] = [get_fact_id(fact,json_dic_path,json_file) for fact in op_node['to']]
                     if any(fact in op_node['to'] for fact in start_fact) and any(fact in op_node['from'] for fact in fact_id):
-                        print('here1')
                         is_legal = False
                         break
                     if any(fact in op_node['from'] for fact in end_fact) and any(fact in op_node['to'] for fact in fact_id):
-                        print('here2')
                         is_legal = False
                         break
                 if is_legal == False:
                     break
                 for fact in set(fact_id_cnt.keys()).difference(fact_id):
-                    # print('fact: ',fact)
                     if any(fact in op_node['to'] and any(_ in op_node['from'] for _ in fact_id) for op_node in op_nodes) and any(fact in op_node['from'] and any(_ in op_node['to'] for _ in fact_id) for op_node in op_nodes):
-                        print('here3',fact)
                         is_legal = False
                         break
                 if is_legal == False:
@@ -251,46 +247,29 @@ def merge_graph(graph:Graph,contained_fact,fact_id_cnt,json_dic_path,contained_o
     while len(not_contained_file) > 0:
         contained_fact,fact_id_cnt,contained_op = get_subgraph(graph.start_node.get_fact(),graph.end_node.get_fact(),json_dic_path,not_contained_file,False,contained_op)
         max_fact_id,contained_file,not_contained_file= select_max_fact_id(fact_id_cnt,contained_fact,graph.start_node.get_fact(),graph.end_node.get_fact(),json_dic_path)   
-        print('max_fact_id: ',max_fact_id)
         if max_fact_id is None and contained_file == None and not_contained_file == None:
-            print('gggg')
             if (graph.start_node,graph.end_node) not in graph.edges:
                 graph.add_edge((graph.start_node,graph.end_node))
             return
-        print("not_contained_file: ",not_contained_file)
-        print(max_fact_id)
         new_node = Merge_node(max_fact_id,contained_file)
         graph.add_node(new_node)
         graph.add_edge((graph.start_node,new_node))
         graph.add_edge((new_node,graph.end_node))
-        print('xxxxx')
-        graph.display()
-        print('xxxxx')
         # 左侧
         left_contained_fact,left_fact_id_cnt,_contained_op = get_subgraph(graph.start_node.get_fact(),max_fact_id,json_dic_path,contained_file,contained_op=contained_op)
-        print("left: ",left_contained_fact,left_fact_id_cnt)
         left_subgraph = Graph(graph.start_node,new_node)
         merge_graph(left_subgraph,left_contained_fact,left_fact_id_cnt,json_dic_path,_contained_op)
         graph.merge(left_subgraph)
-        print('yyyyyyyyyy')
-        graph.display()
-        print('yyyyyyyyyy')
         ## 右侧
-        print(max_fact_id,graph.end_node.get_fact())
         right_contained_fact,right_fact_id_cnt,_contained_op = get_subgraph(max_fact_id,graph.end_node.get_fact(),json_dic_path,contained_file,contained_op=contained_op)
-        print("right: ",right_contained_fact,right_fact_id_cnt)
         right_subgraph = Graph(new_node,graph.end_node)
         merge_graph(right_subgraph,right_contained_fact,right_fact_id_cnt,json_dic_path,_contained_op)
         graph.merge(right_subgraph)
-        print('zzzzzzzz')
-        graph.display()
-        print('zzzzzzzz')
     return
 
 # 得到最终的结果图
 def get_final_graph(fact_in_list,fact_out_list,json_dic_path):
     contained_fact,fact_id_cnt,contained_op = get_subgraph(fact_in_list,fact_out_list,json_dic_path,initial=True)
-    print(contained_op['1.txt.json'])
     if contained_fact == {}:
         return None
     graph = initial_graph(fact_in_list,fact_out_list,contained_fact)
